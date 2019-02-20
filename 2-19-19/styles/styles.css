@@ -1,0 +1,15 @@
+.container {
+    background-color: dodgerblue;
+}
+
+.row {
+    background-color: gainsboro;
+}
+
+.col-12:first-child {
+    background-color: turquoise;
+}
+
+.col-12:last-child {
+    background-color: yellowgreen;
+}
