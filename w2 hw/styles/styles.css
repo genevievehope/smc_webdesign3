@@ -1,0 +1,28 @@
+col-12 {
+    background-color: pink;
+}
+
+col-md-4 {
+    background-color: magenta;
+}
+
+img {
+    width: 100%;
+}
+
+p {
+    font-family: 'Gill Sans', sans-serif;
+}
+
+h1 {
+    font-family: -apple-system, BlinkMacSystemFont, “Segoe UI”, Roboto, “Helvetica Neue”, Arial, sans-serif, “Apple Color Emoji”, “Segoe UI Emoji”, “Segoe UI Symbol”;
+    /* default is 1rem or 16px */
+    font-weight: 400;
+    line-height: 1.5;
+    font-family: 'Bitter', 'Gill Sans', sans-serif;
+    font-size: 16px;
+}
+
+navbar {
+    font-family: "Gill Sans", sans-serif;
+}
