@@ -1,0 +1,26 @@
+nav {
+    background-color: lightseagreen;
+}
+
+a {
+    color: white;
+    font-family: 'Francois One', sans-serif;
+    font-size: 25px;
+}
+
+.display-1 {
+    font-family: 'Francois One', sans-serif;
+}
+
+.display-2 {
+    font-family: 'Francois One', sans-serif;
+    font-size: 30px;
+}
+
+.row {
+    font-family: "Gill Sans", serif;
+}
+
+.col-sm-2 {
+    color: lightseagreen;
+}
