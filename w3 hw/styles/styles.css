@@ -5,7 +5,7 @@ nav {
 a {
     color: white;
     font-family: 'Francois One', sans-serif;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .display-1 {
@@ -17,6 +17,11 @@ a {
     font-size: 30px;
 }
 
+.display-3 {
+    font-family: 'Francois One', sans-serif;
+    font-size: 20px;
+}
+
 .row {
     font-family: "Gill Sans", serif;
 }
@@ -24,3 +29,15 @@ a {
 .col-sm-2 {
     color: lightseagreen;
 }
+
+.table-striped > tbody > tr:nth-child(n+1) > td{
+    background-color: #beeae8;
+}
+
+.table-striped > tbody > tr:nth-child(n+1) > th {
+    background-color: #84cac7;
+ }
+
+ td {
+    color: darkslategrey;
+ }
