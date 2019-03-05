@@ -22,6 +22,19 @@ a {
     font-size: 20px;
 }
 
+h5 {
+    font-family: "Francois One", sans-serif;
+}
+
+p {
+    font-family: "Gill Sans", sans-serif;
+}
+
+dl {
+    margin-bottom: 40px;
+    font-family: "Gill Sans", sans-serif;
+}
+
 .row {
     font-family: "Gill Sans", serif;
 }
@@ -38,6 +51,14 @@ a {
     background-color: #84cac7;
  }
 
+table {
+    margin-top: 40px;
+}
+
  td {
     color: darkslategrey;
+ }
+
+ .align-self-start {
+    width: 215px;
  }
