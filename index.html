@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="styles" href="styles.css">
+
+    <title>W5 In-Class</title>
+
+  </head>
+
+  <body>
+    <div>
+    <p id="text1">Lorem ipsum dolor amet thundercats listicle godard franzen pabst plaid tilde kinfolk. Distillery hell of palo santo hexagon disrupt poke health goth banjo glossier meditation. Migas offal banh mi, tumeric hella four loko bespoke gentrify pinterest tbh mumblecore. Squid brunch swag, man braid fanny pack pabst yr kale chips unicorn. Hashtag deep v affogato readymade small batch taiyaki. Venmo deep v forage, lomo enamel pin ennui adaptogen pug jean shorts portland health goth schlitz.</p>
+    <button id="A1" class="colorButton" onclick="changeColor();">Color Me!</button>
+    <button id="A2" class="visibilityButton" onclick="hideText();">Hide Me!</button>
+    </div>
+    
+    <div>
+        <p id="text2">Venmo pickled portland, church-key yuccie kitsch PBR&B deep v craft beer vape put a bird on it single-origin coffee. Scenester neutra chicharrones cardigan asymmetrical franzen coloring book street art humblebrag fashion axe pug hashtag. Slow-carb chicharrones 3 wolf moon jean shorts selvage church-key authentic kogi schlitz woke narwhal aesthetic artisan try-hard. Neutra yr bitters tbh. Schlitz green juice listicle craft beer seitan pinterest iPhone yr pour-over meggings trust fund freegan squid single-origin coffee sartorial. Banjo flexitarian cray, tumeric gochujang yr selvage polaroid. Poke skateboard church-key cornhole.</p>
+        <button id="B1" class="colorButton" onclick="changeColor();">Color Me!</button>
+        <button id="B2" class="visibilityButton" onclick="hideText();">Hide Me!</button>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function(){
+            $(".colorButton").click(function(){
+                var red = Math.random()*250 + 100
+                var green = Math.random()*250 + 100
+                var blue = Math.random()*250 + 100
+                $(this).siblings("p").css("background-color", "rgb(" + red + ", " + green + ", " + blue + ")");
+            });
+
+            $(".visibilityButton").click(function(){
+                if($(this).siblings("p").css("display") === "none"){
+                    $(this).text("Hide me!");
+                }
+                else {
+                    $(this).text("Show me!");
+                }
+                $(this).siblings("p").toggle();
+            });
+
+            
+        });
+    </script>
+
+    <!-- <script>
+        var colorButton1 = document.getElementById("A1");
+        var colorButton2 = document.getElementById("B1");
+        var displayButton1 = document.getElementById("A2");
+        var displayButton2 = document.getElementById("B2");
+        var text1 = document.getElementById("text1")
+        var text2 = document.getElementById("text2")
+        
+        function changeColor(textElement){
+            var red = Math.random()*250 + 100
+            var green = Math.random()*250 + 100
+            var blue = Math.random()*250 + 100
+            textElement.style.backgroundColor = "rgb(" + red + ", " + green + ", " + blue + ")";
+        }
+        
+        function hideText(textElement) {
+            textElement.style.display = "none";
+        }
+
+        colorButton1.addEventListener("click", changeColor(text1));
+        colorButton2.addEventListener("click", changeColor(text2));
+        // displayButton1.addEventListener("click", hideText(text1));
+        // displayButton2.addEventListener("click", hideText(text2));
+        
+    </script> -->
+
+  </body>
+
+</html>
