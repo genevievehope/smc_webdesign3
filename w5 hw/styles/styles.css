@@ -1,0 +1,21 @@
+h1 {
+    font-family: "Phosphate";
+    font-size: 60px;
+    margin-top: 15px;
+}
+
+img {
+    width: 100%;
+}
+
+.needTopMargin {
+    margin-top: 30px;
+}
+
+button {
+    margin-top: 15px;
+}
+
+body {
+    background-color: #dedefd
+}
