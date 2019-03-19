@@ -16,7 +16,8 @@
             <div class="col">
                 <button id="changeH1" class="changeButton">Change Size and Color</button>
                 <button id="alert" class="alertButton">Say Happy Birthday</button>
-                <button id="animation" class="animateButton">Animate a Photo</button>
+                <button id="animation" class="animateButton">Fade a Photo Out</button>
+                <button id="animation2" class="animateButton2">Fade it Back</button>
                 <h1>3/8/19: My 21st Birthday</h1>
                 <img class="needTopMargin" id="partay" src="images/party.JPG">
             </div>
@@ -94,6 +95,9 @@
 
             $(".animateButton").click(function(){
                 $("#partay").fadeOut(1200);
+            });
+            $(".animateButton2").click(function(){
+                $("#partay").fadeIn(1200);
             });
 
             $(".textInput").blur(function(){
