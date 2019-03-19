@@ -15,7 +15,8 @@
         <div class="row">
             <div class="col">
                 <button id="changeH1" class="changeButton">Change Size and Color</button>
-                <button id="alert" class="alertButton">Send Genny a Present</button>
+                <button id="alert" class="alertButton">Send Genny an Alert</button>
+                <button id="animation" class="animateButton">Animate a Photo</button>
                 <h1>3/8/19: My 21st Birthday</h1>
                 <img class="needTopMargin" src="images/party.JPG">
             </div>
@@ -31,7 +32,7 @@
                 </div>
                 <div class="col-md-4">
                     <img class="needTopMargin" src="images/summersalt.jpg">
-                    <img class="needTopMargin" src="images/cake.jpg">
+                    <img class="needTopMargin" src="images/cake.jpg" id="cake">
                 </div>
             </div>
     </div>
@@ -43,22 +44,33 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
     <script>
-            $(document).ready(function(){
-                $(".changeButton").click(function(){
-                    var red = Math.random()*200 + 75
-                    var green = Math.random()*200 + 40
-                    var blue = Math.random()*200 + 60
-                    var number = Math.random()*50 + 50
-                    $(this).siblings("h1").css("color", "rgb(" + red + ", " + green + ", " + blue + ")");
-                    $(this).siblings("h1").css("font-size", number + "px");
-                });
-                
-                $(".alertButton").on('click', function() {
-                    $.alertable.alert('Howdy!').always(function() {
-                    console.log('Alert dismissed');
-                });
+        $(document).ready(function(){
+            $(".changeButton").click(function(){
+                var red = Math.random()*200 + 75
+                var green = Math.random()*200 + 40
+                var blue = Math.random()*200 + 60
+                var number = Math.random()*50 + 50
+                $(this).siblings("h1").css("color", "rgb(" + red + ", " + green + ", " + blue + ")");
+                $(this).siblings("h1").css("font-size", number + "px");
             });
+            
+            $( ".animateButton" ).click(function(){
+                function animate
+                for(var i = 100; i > 50; i=i-5){ 
+                    console.log(i);
+                    //adjust width of images w/ for loop
+                }
+                $(img).animate({width: "50%"}, 500);
+                    //program doesn't recognize .animate property, says it's undefined
             });
+
+            $(".alertButton").on('click', function() {
+                $.alert.alert('Howdy!').always(function() {
+                    //program doesn't recognize .alert property, says it's undefined
+                console.log('Alert dismissed');
+            });     
+        });
+    });
     </script>
 
   </body>
