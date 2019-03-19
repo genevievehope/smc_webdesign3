@@ -15,26 +15,60 @@
         <div class="row">
             <div class="col">
                 <button id="changeH1" class="changeButton">Change Size and Color</button>
-                <button id="alert" class="alertButton">Send Genny an Alert</button>
+                <button id="alert" class="alertButton">Say Happy Birthday</button>
                 <button id="animation" class="animateButton">Animate a Photo</button>
                 <h1>3/8/19: My 21st Birthday</h1>
-                <img class="needTopMargin" src="images/party.JPG">
+                <img class="needTopMargin" id="partay" src="images/party.JPG">
             </div>
         </div>
         <div class="row">
-                <div class="col-md-4">
-                    <img class="needTopMargin" src="images/graveyard.JPG">
-                    <img class="needTopMargin" src="images/seagood.jpg">
-                </div>
-                <div class="col-md-4">
-                    <img class="needTopMargin" src="images/sista.jpg">
-                    <img class="needTopMargin" src="images/ski.jpg">
-                </div>
-                <div class="col-md-4">
-                    <img class="needTopMargin" src="images/summersalt.jpg">
-                    <img class="needTopMargin" src="images/cake.jpg" id="cake">
-                </div>
+            <div class="col-md-4">
+                <img class="needTopMargin" src="images/graveyard.JPG">
+                <img class="needTopMargin" src="images/seagood.jpg">
             </div>
+            <div class="col-md-4">
+                <img class="needTopMargin" src="images/sista.jpg">
+                <img class="needTopMargin" src="images/ski.jpg">
+            </div>
+            <div class="col-md-4">
+                <img class="needTopMargin" src="images/summersalt.jpg">
+                <img class="needTopMargin" src="images/cake.jpg" id="cake">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <form id="registry">
+                    <h2>Gift Registry</h2>
+                    <p>Write your name next to the item you plan to give me. (I like knowing ahead of time.)</p>
+                    <table>
+                        <tr>
+                            <td>
+                                <p>shell earrings</p>
+                            </td>
+                            <td>
+                                <input type="text" class="textInput">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>trip to Yosemite</p>
+                            </td>
+                            <td>
+                                <input type="text" class="textInput">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>lifetime's supply of pasta</p>
+                            </td>
+                            <td>
+                                <input type="text" class="textInput">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
     </div>
 
     <!-- Optional JavaScript -->
@@ -54,22 +88,18 @@
                 $(this).siblings("h1").css("font-size", number + "px");
             });
             
-            $( ".animateButton" ).click(function(){
-                //function animate
-                //for(var i = 100; i > 50; i=i-5){ 
-                    //console.log(i);
-                    //adjust width of images w/ for loop}
-                $(img).animate({width: "50%"}, 500);
-                    //program doesn't recognize .animate property, says it's undefined
+            $(".alertButton").click(function(){
+                alert('Your "Happy Birthday" message has been sent!');
+            });    
+
+            $(".animateButton").click(function(){
+                $("#partay").fadeOut(400);
             });
 
-            $(".alertButton").on('click', function() {
-                $.alert.alert('Howdy!').always(function() {
-                    //program doesn't recognize .alert property, says it's undefined
-                console.log('Alert dismissed');
-            });     
+            $(".textInput").blur(function(){
+                prompt("you can't leave it empty, plz fill in", "Mary Poppins");
+            })
         });
-    });
     </script>
 
   </body>

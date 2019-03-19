@@ -5,6 +5,13 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    font-family: 30px;
+    color: navy;
+    text-align: center;
+    font-family: "Phosphate";
+}
+
 img {
     width: 100%;
 }
@@ -19,4 +26,23 @@ button {
 
 body {
     background-color: #dedefd
+}
+
+form {
+    background-color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 15px;
+}
+
+td {
+    width: 100%;
+}
+
+input {
+    width: 500px;
+}
+
+shorterBox {
+    width: 100px;
 }
