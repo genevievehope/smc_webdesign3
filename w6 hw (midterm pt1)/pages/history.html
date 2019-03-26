@@ -18,27 +18,31 @@
   </head>
   <body>
     <div class="container">
-            <a href="../index.html"><img src="../images/logo4.png" class="logo"/></a>
-        
-        <nav class="navbar-expand-lg">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+      <div class="row">
+        <div class="col">
+          <a href="../index.html">
+            <img src="../images/logo4.png" alt="logo" class="logo">
+          </a>
 
-            <button onclick="window.location.href='poles.html'">
-                Poles
-            </button>
-            <button onclick="window.location.href='rainsticks.html'">
-                Rainsticks
-            </button>
-            <button onclick="window.location.href='charms.html'">
-                Jewelry
-            </button>
-            <button onclick="window.location.href='history.html'">
-                History
-            </button>
-        </nav>
+          <nav class="navbar-expand-lg">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+  
+              <button onclick="window.location.href='shop.html'">
+                  Shop
+              </button>
+              <button onclick="window.location.href='history.html'">
+                  History
+              </button>
+          </nav>
+        </div>
+        <!-- end of col -->
     </div>
+    <!-- end of row -->
+  </div>
+  <!-- end of container -->
+
     <div class="container">
             <div class="jumbotron">
                     <h1 class="display-4">History</h1>
@@ -51,35 +55,42 @@
                             At the age of 32, Burkard has established himself as a global presence and influencer. He is happiest with his wife Breanne raising their two sons Jeremiah and Forrest in his hometown of Pismo Beach, California.</p>
     </div>
 
-    <div class="modal" tabindex="-1" role="dialog">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title">Modal title</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  <p>Modal body text goes here.</p>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
-              </div>
-            </div>
-          </div>
+    <button type="button" class="btn btn-outline-success modal-popper">Modal me!</button>
+
+    
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script>
-        $('#myModal').on('shown.bs.modal', function () {
-        $('#myInput').trigger('focus')
-    })</script>
+    <script src="main.js"></script>
+    
+    <div class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">My Amazing Modal!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-4">Column 1</div>
+                            <div class="col-md-4">Column 2</div>
+                            <div class="col-md-4">Column 3</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
   </body>
 </html>
