@@ -33,6 +33,13 @@ h1 {
     color: rgb(231, 204, 169);
 }
 
+h2{
+    font-size: 20px;
+    color: rgb(37, 27, 13);
+    font-family: "Share", "sans-serif";
+    font-weight: bold;
+}
+
 .crop img {
     object-fit: none; /* Do not scale the image */
     object-position: center; /* Center the image within the element */
@@ -45,7 +52,7 @@ h1 {
   /* new stuff */
 
 .logo {
-    max-width: 100%;
+    max-width: 60%;
     display: block;
     margin: 30px auto 30px;
 }
@@ -100,4 +107,28 @@ img {
 
 .lead {
     color: rgb(37, 27, 13);
+}
+
+.spacey{
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.dark{
+    color: rgb(37, 27, 13);
+}
+
+.hs{
+    max-width: 30%;
+    display: block;
+
+}
+
+.sidetext{
+    display: inline-block;
+    justify-content: right;
+}
+
+.modal-popper{
+    background-color:  rgb(231, 204, 169);
 }
