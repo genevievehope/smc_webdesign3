@@ -248,3 +248,11 @@ ul{
 li:first-child{
     margin-top: 60px;
 }
+
+/* below code applies for everything under 1000px */
+@media only screen and (max-width: 792px) {
+    .longWidth {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+ }
