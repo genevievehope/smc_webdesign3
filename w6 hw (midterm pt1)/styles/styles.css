@@ -63,7 +63,7 @@ h3{
 .logo {
     max-width: 60%;
     display: block;
-    margin: 30px auto 30px;
+    margin: 15px auto 30px;
 }
 
 body {
@@ -83,6 +83,8 @@ button {
     display: center;
     margin-bottom: 30px;
     text-transform: uppercase;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 /* 
 .button:hover {
@@ -122,9 +124,9 @@ img {
     width: 100%;
 }
 
-.navbar-nav > li {
-    flex: 1;
-  }
+nav{
+    text-align: center;
+}
 
 .lead {
     background-color: rgb(37, 27, 13);
@@ -241,4 +243,8 @@ ul{
 .centered{
     text-align: center;
     text-transform: uppercase;
+}
+
+li:first-child{
+    margin-top: 60px;
 }
