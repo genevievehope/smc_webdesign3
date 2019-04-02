@@ -10,6 +10,7 @@
 
 .row {
     line-height: 22px;
+    margin-top: 30px;
 }
 
 .col-12 {
@@ -24,20 +25,28 @@ p {
 }
 
 h1 {
-    font-family: “Segoe UI”, Roboto, “Helvetica Neue”, Arial, sans-serif, “Apple Color Emoji”, “Segoe UI Emoji”, “Segoe UI Symbol”;
+    font-family: 'Share', sans-serif;
     /* default is 1rem or 16px */
     font-weight: 400;
     line-height: 1.5;
-    font-family: 'Bitter', 'Gill Sans', sans-serif;
     font-size: 24px;
     color: rgb(231, 204, 169);
 }
 
 h2{
-    font-size: 20px;
-    color: rgb(37, 27, 13);
+    font-size: 30px;
+    color: rgb(231, 204, 169);
+    background-color: rgb(37, 27, 13);
     font-family: "Share", "sans-serif";
     font-weight: bold;
+    padding: 3px;
+}
+
+h3{
+    background-color: none;
+    font-family: "Share", sans-serif;
+    color: rgb(37, 27, 13);
+    line-height: 22px;
 }
 
 .crop img {
@@ -62,18 +71,22 @@ background-image: url(https://otd.realites-paralleles.com/wp-content/uploads/sit
 }
 
 button {
-    width: 150px;
+    width: 130px;
     background-color: rgba(231, 204, 169, .25);
     border-width: 0px;
     font-family: "Share", "sans-serif";
     color: rgb(231, 204, 169);
     font-weight: bold;
     font-size: 20px;
-    height: 50px;
-    border-radius: 16px;
+    height: 40px;
+    border-radius: 10px;
     display: center;
     margin-bottom: 30px;
+    text-transform: uppercase;
 }
+/* 
+.button:hover {
+    background-color: rgb(231, 204, 169); */
 
 .navbar-toggle {
     padding: .25rem .75rem;
@@ -85,8 +98,16 @@ button {
 }
 
 .carousel img {
-    max-height: 500px;
     margin-bottom: 30px;
+}
+
+.carousel-inner{
+    margin-bottom: 15px;
+}
+
+.carousel{
+    border-color: rgb(231, 204, 169);
+    border-width: 3px;
 }
 
 .head {
@@ -106,11 +127,16 @@ img {
   }
 
 .lead {
-    color: rgb(37, 27, 13);
+    background-color: rgb(37, 27, 13);
+    color: rgb(231, 204, 169);
+    font-size: 22px;
+    font-weight: lighter;
+    font-family: "Share", sans-serif;
+    padding: 3px;
+    line-height: 30px;
 }
 
 .spacey{
-    margin-top: 5px;
     margin-bottom: 15px;
 }
 
@@ -118,17 +144,101 @@ img {
     color: rgb(37, 27, 13);
 }
 
+.white{
+    color: #ffffff;
+}
+
 .hs{
-    max-width: 30%;
+    max-width: 100%;
     display: block;
 
 }
 
-.sidetext{
-    display: inline-block;
-    justify-content: right;
+h5{
+    font-family: "Share", "sans-serif";
+    color: rgb(37, 27, 13);
+}
+
+darktext{
+    font-family: "Share", "sans-serif";
+    color: rgb(37, 27, 13);
+}
+
+form{
+    margin-top: 15px;
+
+}
+
+input {
+    background-color: rgb(231, 204, 169);
+    border-width: 0px;
+    height: 30px;
+    width: 300px;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+
+select {
+    background-color: rgb(231, 204, 169);
+    border-width: 0px;
+    height: 30px;
+    width: 300px;
+    border-radius: 5px;
+    padding-left: 5px;
+    color: white;
+    font-family: 'Gill Sans', sans-serif;
+}
+
+th{
+    text-transform: uppercase;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.table{
+    font-family: "Share", sans-serif;
+    color: rgb(37, 27, 13);
+    border-width: 0px;
+}
+
+::placeholder{
+    font-family: 'Gill Sans', sans-serif;
+    color: white;
+}
+
+td{
+    width: 10%;
+}
+
+.extraSpace{
+    margin-bottom: 30px;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0px;
 }
 
 .modal-popper{
-    background-color:  rgb(231, 204, 169);
+    padding: 0px;
+}
+
+.card{
+    background-color: rgb(231, 204, 169);
+    border-width: 0px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+.ml{
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.centered{
+    text-align: center;
+    text-transform: uppercase;
 }
