@@ -14,3 +14,13 @@ form {
     margin: auto;
     margin-top: 20px;
 }
+
+
+body {
+    background-image: url(../network.jpeg)
+}
+
+.whiteBG {
+    background-color: white;
+    margin: none;
+}
