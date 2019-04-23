@@ -46,8 +46,9 @@
                     </select>
                     </div>
 
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <div class="alert alert-primary" style="display: none" role="alert">What an excellent hometown!</div>
 
+                    <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
 
             </div>
@@ -104,14 +105,19 @@
                 $('#carModel').html(innerContent);  
             }); // end of carMake change event
 
-            var city = $('#carModel');
-            if (city.val() === '') {
-                console.log('argh');
-            }
-            else {
-                console.log('eyye');
-                alert("What an excellent hometown!");
-            }
+            $("#carModel").change(function(){
+                $("div").show();
+            })
+
+            // var city = $('#carModel');
+            // if (city.val() === '') {
+            //     console.log('argh');
+            // }
+            // else {
+            //     console.log('ayee');
+            //     alert("What an excellent hometown!");
+            //     // $("#carModel").after(<div class="alert alert-primary" role="alert">What an excellent hometown!</div>);
+            // }
 
         });// end of document ready
     </script>
