@@ -46,9 +46,8 @@
                     </select>
                     </div>
 
-                    <div class="alert alert-primary" style="display: none" role="alert">What an excellent hometown!</div>
+                    <div class="alert alert-success" style="display: none" role="alert">What an excellent hometown!</div>
 
-                    <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
 
             </div>
@@ -74,8 +73,8 @@
                 $('#carModel').removeAttr('disabled');
                 switch(currentSelect){
                     case "ak":
-                        for(var i = 0; i < azCities.length; i++){
-                            innerContent += '<option value="' + azCities[i].toLowerCase() + '">' + azCities[i] + "</option>";
+                        for(var i = 0; i < akCities.length; i++){
+                            innerContent += '<option value="' + akCities[i].toLowerCase() + '">' + akCities[i] + "</option>";
                         }
                         break;
                     case "wa":
