@@ -35,10 +35,18 @@
 .thing3{
     width: 80px;
     height: 80px;
-    animation-name: spin;
-    animation-duration: 3s;
+    /* animation-name: spin;
+    animation-duration: 5s; */
     animation-iteration-count: infinite;
-    position: absolute;
+    margin: auto;
+    margin-top: 30px;
+    background-image: linear-gradient(yellow, darkgreen);
+    transition: all 1s ease;
+}
+
+.thing3:hover{
+    color: pink;
+    transform: rotate(750deg);
 }
 
 p {
@@ -73,7 +81,7 @@ p:hover {
 
 .horizBox{
     animation-name: curvyX;
-    animation-delay: .5s;
+    animation-delay: 1s;
     position: relative;
     animation-iteration-count: infinite;
     background-color: rgb(255, 255, 0);
@@ -94,20 +102,21 @@ p:hover {
     animation-name: curvyY;
     animation-iteration-count: infinite;
     animation-duration: 3s;
+    animation-timing-function: ease-in;
 }
 
 @keyframes curvyX{
     0%{
         left: 0px;
-        top: 10px;
+        top: 100px;
     }
     50%{
         left: 800px;
-        top: 10px;
+        top: 100px;
     }
     100%{
         left: 0px;
-        top: 10px;
+        top: 100px;
     }
 }
 
@@ -118,7 +127,7 @@ p:hover {
     }
     50%{
         left: 0px;
-        top: 300px;
+        top: -500px;
     }
     100%{
         left: 0px;
@@ -187,14 +196,15 @@ p:hover {
 @keyframes spin{
     0%{
         color: navy;
-        left: 400px;
-        top: 70px;
+        -moz-transform: rotate(0deg);
     }
     50%{
         color: azure;
+        -moz-transform: rotate(360deg);
     }
     100%{
         color: navy;
+        -moz-transform: rotate(0deg);
     }
 }
 
