@@ -1,0 +1,227 @@
+.field {
+    min-height: 600px;
+    background-color: darkturquoise;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.thing {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    animation-name: motion1;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    position: absolute;
+    animation-timing-function: ease-out;
+}
+
+.thing2{
+    height: 150px;
+    border-radius: 50%;
+    animation-name: motion2;
+    animation-duration: 2s;
+    transition: transform 1s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    position: absolute;
+    animation-timing-function: ease-out;
+    /* animation-timing-function: cubic-bezier(0.42, 0, 1, 1); */
+}
+
+.thing3{
+    width: 80px;
+    height: 80px;
+    animation-name: spin;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    position: absolute;
+}
+
+p {
+    color: darkorange;
+    font-family: Georgia;
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+    margin-top: 15px;
+    display: inline-block;
+    font-size: 6em;
+    /* animation-name: pAnimation;
+    animation-iteration-count: 3; */
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    transition: all .5s ease;
+}
+  
+p:hover {
+    font-size: 8em;
+    color: red;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+  
+@media screen and (max-width: 1000px){
+    p { 
+        font-size: 2em;
+        color: red;
+    }
+}
+
+.horizBox{
+    animation-name: curvyX;
+    animation-delay: .5s;
+    position: relative;
+    animation-iteration-count: infinite;
+}
+
+.vertCircle{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    color: black;
+    position: absolute;
+    animation-name: curvyY;
+    animation-iteration-count: infinite;
+}
+
+@keyframes curvyX{
+    0%{
+        left: 0px;
+        top: 1000px;
+    }
+    50%{
+        left: 300px;
+        top: 1000px;
+    }
+    100%{
+        left: 0px;
+        top: 1000px;
+    }
+}
+
+@keyframes curvyY{
+    0%{
+        left: 0px;
+        top: 0px;
+    }
+    50%{
+        left: 0px;
+        top: 300px;
+    }
+    100%{
+        left: 0px;
+        top: 0px;
+    }
+}
+
+@keyframes motion1 {
+    0%{
+        background-color: yellow;
+        top: 5px;
+        left: 10px;
+    }
+    20%{
+        background-color: lime;
+        top: 175px;
+        left: 600px;
+    }
+    40%{
+        background-color: black;
+        top: 500px;
+        left: 400px;
+    }
+    60%{
+        background-color: magenta;
+        top: 200px;
+        left: 400px;
+    }
+    80%{
+        background-color: red;
+        top: -300px;
+        left: 400px;
+    }
+    100%{
+        background-color: yellow;
+        top: 5px;
+        left: 10px;
+    }
+}
+
+@keyframes motion2 {
+    0% {
+        background-color:red;
+        top:-50px;
+        left: 800px;
+        width: 150px;
+    }
+    45% {
+        background-color: red;
+        width: 150px;
+        left: 800px;
+    }
+    50%   {background-color:orange;
+        top:300px;
+        left:725px;
+        width: 300px;
+    }
+    100% {
+        background-color:red;
+        top:-50px;
+        left: 800px;
+        width: 150px;
+    }
+  }
+
+@keyframes spin{
+    0%{
+        color: navy;
+        left: 400px;
+        top: 70px;
+    }
+    50%{
+        color: azure;
+    }
+    100%{
+        color: navy;
+    }
+}
+
+
+
+/* @keyframes motion2 {
+    0%{
+        background-color: red;
+        top: -50px;
+        left: 700px;
+    }
+    20%{
+        background-color: orange;
+        top: 450px;
+        left: 700px;
+    }
+    40%{
+        background-color: red;
+        top: 10px;
+        left: 700px;
+    }
+    60%{
+        background-color: orange;
+        top: 450px;
+        left: 700px;
+    }
+    80%{
+        background-color: red;
+        top: 200px;
+        left: 700px;
+    }
+    100%{
+        background-color: orange;
+        top: 450px;
+        left: 700px;
+    }
+} */
+
