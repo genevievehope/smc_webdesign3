@@ -44,6 +44,18 @@
     transition: all 1s ease;
 }
 
+img {
+    width: 300px;
+    margin: auto;
+    margin-top: 30px;
+    display: block;
+    transition: all 1s ease;
+}
+
+img:hover {
+    transform: rotate(700deg);
+}
+
 .thing3:hover{
     color: pink;
     transform: rotate(750deg);
