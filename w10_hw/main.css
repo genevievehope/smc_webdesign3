@@ -76,30 +76,38 @@ p:hover {
     animation-delay: .5s;
     position: relative;
     animation-iteration-count: infinite;
+    background-color: rgb(255, 255, 0);
+    opacity: 50%;
+    width: 100px;
+    height: 100px;
+    animation-duration: 3s;
+    margin-bottom: 30px;
 }
 
 .vertCircle{
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
+    margin-left: 10px;
     border-radius: 50%;
     color: black;
     position: absolute;
     animation-name: curvyY;
     animation-iteration-count: infinite;
+    animation-duration: 3s;
 }
 
 @keyframes curvyX{
     0%{
         left: 0px;
-        top: 1000px;
+        top: 10px;
     }
     50%{
-        left: 300px;
-        top: 1000px;
+        left: 800px;
+        top: 10px;
     }
     100%{
         left: 0px;
-        top: 1000px;
+        top: 10px;
     }
 }
 
