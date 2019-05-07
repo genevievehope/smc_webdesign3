@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>W11 In Class</title>
+    <style>
+        body {
+            background-color: lavender;
+            margin: 0px;
+        }
+
+        #myCanvas{
+            width: 100vw;
+            height: 100vh;
+        }
+    </style>
+  </head>
+  <body>
+    <canvas id="myCanvas">
+    </canvas>
+
+    <script>
+        var canvas = document.getElementById("#myCanvas");
+        var context = canvas.getContext("2D");
+
+        context.fillStyle = "#ffaaaf";
+        context.fillRect(100, 100, 200, 200);
+
+        context.font = "24px Helvetica";
+        context.textAlign = "center";
+        context.fillText("This is my text.", canvas.width/2, canvas.height/2);
+    </script>
+
+  </body>
+</html>
