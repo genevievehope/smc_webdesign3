@@ -4,7 +4,7 @@ var context = canvas.getContext("2d");
 var ballX = canvas.width/2;
 var ballY = canvas.height/2;
 var ballColor = '#880088';
-var ballRadius = 90;
+var ballRadius = 100;
 
 var speedX = 5;
 var speedY = 3;
@@ -13,6 +13,12 @@ var moveDown = true;
 
 var clickCount = 0;
 var totalCount = 0;
+
+console.log("value: " + redRange.value);
+
+if (redRange.value != 112){
+    console.log("new value: " + redRange.value);
+} //the slider doesn't seem to be updating the redRange value every time i move it
 
 function animate(){
     context.fillStyle = "black";
@@ -73,7 +79,7 @@ canvas.addEventListener("click", function(event){
     if( distX < ballRadius && distY < ballRadius){
         console.log('CLICK!!!!!');
         ballColor = randomRGB;
-        ballRadius = Math.floor(Math.random() * 150) + 90;
+        ballRadius = Math.floor(Math.random() * 150) + 100;
         clickCount++;
         console.log(clickCount);
     }
@@ -87,6 +93,3 @@ output.innerHTML = slider.value; // Display the default slider value
 slider.oninput = function() {
   output.innerHTML = this.value;
 }
-
-
-console.log(redRange.value); // it doesnt know what redRange is
