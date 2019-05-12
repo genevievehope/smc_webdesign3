@@ -14,8 +14,6 @@ var moveDown = true;
 var clickCount = 0;
 var totalCount = 0;
 
-console.log("value: " + redRange.value);
-
 if (redRange.value != 112){
     console.log("new value: " + redRange.value);
 } //the slider doesn't seem to be updating the redRange value every time i move it
@@ -41,16 +39,20 @@ function animate(){
     }
 
     if (moveRight){
+        // speedX = Math.random * 8;
         ballX = ballX + speedX;
     }
     else{
+        // speedX = Math.random * 8;
         ballX = ballX - speedX;
     }
 
     if (moveDown){
+        // speedY = Math.random() * 8;
         ballY = ballY + speedY;
     }
     else{
+        // speedY = Math.random() * 8;
         ballY = ballY - speedY;
     }
 
@@ -70,11 +72,21 @@ canvas.addEventListener("click", function(event){
     // 
     var distX = Math.abs(ballX - event.clientX);
     var distY = Math.abs(ballY - event.clientY);
-    red =   Math.floor(Math.random() * 255);  // returns a random integer from 0 to 254 i think
-    green =   Math.floor(Math.random() * 255); 
-    blue =   Math.floor(Math.random() * 255); 
-    var randomRGB = "rgb(" + red + "," + green + "," + blue + ")";
+    // red =   Math.floor(Math.random() * 255);  // returns a random integer from 0 to 254 i think
+    // green =   Math.floor(Math.random() * 255); 
+    // blue =   Math.floor(Math.random() * 255); 
     totalCount++;
+    
+    $(document).ready(function(){     	
+        $( ".redLabel" ).empty();
+        $( ".redLabel" ).append("<h2> Red: " + redRange.value + "</h2>");
+        $( ".greenLabel" ).empty();
+        $( ".greenLabel" ).append("<h2> Green: " + greenRange.value + "</h2>");
+        $( ".blueLabel" ).empty();
+        $( ".blueLabel" ).append("<h2> Blue: " + blueRange.value + "</h2>");
+    });
+
+    var randomRGB = "rgb(" + redRange.value + "," + greenRange.value + "," + blueRange.value + ")";
 
     if( distX < ballRadius && distY < ballRadius){
         console.log('CLICK!!!!!');
@@ -82,7 +94,7 @@ canvas.addEventListener("click", function(event){
         ballRadius = Math.floor(Math.random() * 150) + 100;
         clickCount++;
         console.log(clickCount);
-    }
+    }  
 })
 
 var slider = document.getElementById("myRange");
