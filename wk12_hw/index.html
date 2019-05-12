@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Modak" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+    
+    <title>Canvas 2 - The Game</title>
+    <style>
+        body {
+            margin: 0px;
+        }
+        canvas {
+            border: 1px solid black;
+        }
+
+        h1{
+            font-family: Acme;
+            font-size: 50px;
+        }
+
+        h2{
+            font-family: Acme;
+            font-size: 20px;
+        }
+
+        container{
+            margin-top: 15px;
+        }
+
+        .slidecontainer {
+            width: 1200px; /* Width of the outside container */
+            margin: auto;
+        }
+
+        /* red */
+        .sliderR {
+            -webkit-appearance: none;  /* Override default CSS styles */
+            appearance: none;
+            width: 100%; /* Full-width */
+            height: 15px; /* Specified height */
+            background: #d3d3d3; /* Grey background */
+            outline: none; /* Remove outline */
+            opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+            -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+            transition: opacity .2s;
+        }
+
+        /* Mouse-over effects */
+        .sliderR:hover {
+            opacity: 1; /* Fully shown on mouse-over */
+        }
+
+        /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */ 
+        .sliderR::-webkit-slider-thumb {
+            -webkit-appearance: none; /* Override default look */
+            appearance: none;
+            width: 35px; /* Set a specific slider handle width */
+            background: #ff0000; /* Green background */
+            height: 35px; /* Slider handle height */
+            cursor: pointer; /* Cursor on hover */
+            border-radius: 50%;
+        }
+
+        .sliderR::-moz-range-thumb {
+            width: 25px; /* Set a specific slider handle width */
+            height: 25px; /* Slider handle height */
+            background: #ff0000; /* Green background */
+            cursor: pointer; /* Cursor on hover */
+        }
+        
+        /* green */
+        .sliderG {
+            -webkit-appearance: none;  /* Override default CSS styles */
+            appearance: none;
+            width: 100%; /* Full-width */
+            height: 15px; /* Specified height */
+            background: #d3d3d3; /* Grey background */
+            outline: none; /* Remove outline */
+            opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+            -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+            transition: opacity .2s;
+        }
+
+        /* Mouse-over effects */
+        .sliderG:hover {
+            opacity: 1; /* Fully shown on mouse-over */
+        }
+
+        /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */ 
+        .sliderG::-webkit-slider-thumb {
+            -webkit-appearance: none; /* Override default look */
+            appearance: none;
+            width: 35px; /* Set a specific slider handle width */
+            background: #00ff00; /* Green background */
+            height: 35px; /* Slider handle height */
+            border-radius: 50%;
+            cursor: pointer; /* Cursor on hover */
+        }
+
+        .sliderG::-moz-range-thumb {
+            width: 25px; /* Set a specific slider handle width */
+            height: 25px; /* Slider handle height */
+            background: #00ff00; /* Green background */
+            cursor: pointer; /* Cursor on hover */
+        }
+
+        /* blue */
+        .sliderB {
+            -webkit-appearance: none;  /* Override default CSS styles */
+            appearance: none;
+            width: 100%; /* Full-width */
+            height: 15px; /* Specified height */
+            background: #d3d3d3; /* Grey background */
+            outline: none; /* Remove outline */
+            opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+            -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+            transition: opacity .2s;
+        }
+
+        /* Mouse-over effects */
+        .sliderB:hover {
+            opacity: 1; /* Fully shown on mouse-over */
+        }
+
+        /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */ 
+        .sliderB::-webkit-slider-thumb {
+            -webkit-appearance: none; /* Override default look */
+            appearance: none;
+            width: 35px; /* Set a specific slider handle width */
+            background: #0000ff; /* Green background */
+            height: 35px; /* Slider handle height */
+            border-radius: 50%;
+            cursor: pointer; /* Cursor on hover */
+        }
+
+        .sliderB::-moz-range-thumb {
+            width: 25px; /* Set a specific slider handle width */
+            height: 25px; /* Slider handle height */
+            background: #0000ff; /* Green background */
+            cursor: pointer; /* Cursor on hover */
+        }
+
+
+        .green{
+            background: "#00ff00";
+        }
+
+        .blue{
+            background: "#0000ff";
+        }   
+    </style>
+</head>
+
+<body>
+    <div container>
+        <div row>
+            <div col>
+                <h1 style="text-align:center">Catch the Ball - If You Can!</h1>
+                <div style="text-align:center">
+                    <canvas id="game" width="1200" height="600" margin-top="30px">
+                        This would have been a great interactive game. Plz try on a canvas-friendly browser!
+                    </canvas>
+                </div>
+            </div>
+        </div>
+        <div row>
+            <div col>
+                <div class="slidecontainer">
+                    <h2>Red:</h2>
+                    <input type="range" min="0" max="255" value="112" class="sliderR" id="redRange">
+                    <h2>Green:</h2>
+                    <input type="range" min="0" max="255" value="112" class="sliderG" id="greenRange">
+                    <h2>Blue:</h2>
+                    <input type="range" min="0" max="255" value="112" class="sliderB" id="blueRange">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="canvas.js"></script>
+
+    
+</body>
+</html>
