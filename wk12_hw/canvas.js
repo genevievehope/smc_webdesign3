@@ -111,8 +111,8 @@ canvas.addEventListener("click", function(event){
         console.log('CLICK!!!!!');
         ballColor = sliderChoice;
         ballRadius = Math.floor(Math.random() * 150) + 100;
-        speedX++;
-        speedY++;
+        speedX = speedX + .5;
+        speedY = speedY + .5;
         clickCount++;
         console.log(clickCount);
     }  
