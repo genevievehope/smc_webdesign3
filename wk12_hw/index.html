@@ -21,7 +21,7 @@
             font-size: 50px;
         }
 
-        h2{
+        label{
             font-family: Acme;
             font-size: 20px;
         }
@@ -34,9 +34,8 @@
             width: 1200px; /* Width of the outside container */
             margin: auto;
         }
-
-        /* red */
-        .sliderR {
+        
+        input[type=range]{
             -webkit-appearance: none;  /* Override default CSS styles */
             appearance: none;
             width: 100%; /* Full-width */
@@ -48,109 +47,51 @@
             transition: opacity .2s;
         }
 
-        /* Mouse-over effects */
-        .sliderR:hover {
+        input[type=range]:hover{
             opacity: 1; /* Fully shown on mouse-over */
         }
+
+        input[type=range]::-webkit-slider-thumb {
+            -webkit-appearance: none; /* Override default look */
+            appearance: none;
+            width: 35px; /* Set a specific slider handle width */
+            height: 35px; /* Slider handle height */
+            cursor: pointer; /* Cursor on hover */
+            border-radius: 50%;
+        }
+
+        input[type=range]::-moz-range-thumb {
+            width: 25px; /* Set a specific slider handle width */
+            height: 25px; /* Slider handle height */
+            cursor: pointer; /* Cursor on hover */
+        }
+
 
         /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */ 
         .sliderR::-webkit-slider-thumb {
-            -webkit-appearance: none; /* Override default look */
-            appearance: none;
-            width: 35px; /* Set a specific slider handle width */
-            background: #ff0000; /* Green background */
-            height: 35px; /* Slider handle height */
-            cursor: pointer; /* Cursor on hover */
-            border-radius: 50%;
+            background: #ff0000; /* red background */
         }
 
         .sliderR::-moz-range-thumb {
-            width: 25px; /* Set a specific slider handle width */
-            height: 25px; /* Slider handle height */
-            background: #ff0000; /* Green background */
-            cursor: pointer; /* Cursor on hover */
-        }
-        
-        /* green */
-        .sliderG {
-            -webkit-appearance: none;  /* Override default CSS styles */
-            appearance: none;
-            width: 100%; /* Full-width */
-            height: 15px; /* Specified height */
-            background: #d3d3d3; /* Grey background */
-            outline: none; /* Remove outline */
-            opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
-            -webkit-transition: .2s; /* 0.2 seconds transition on hover */
-            transition: opacity .2s;
+            background: #ff0000; /* red background */
         }
 
-        /* Mouse-over effects */
-        .sliderG:hover {
-            opacity: 1; /* Fully shown on mouse-over */
-        }
-
-        /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */ 
         .sliderG::-webkit-slider-thumb {
-            -webkit-appearance: none; /* Override default look */
-            appearance: none;
-            width: 35px; /* Set a specific slider handle width */
-            background: #00ff00; /* Green background */
-            height: 35px; /* Slider handle height */
-            border-radius: 50%;
-            cursor: pointer; /* Cursor on hover */
+            background: #00ff00; /* green background */
         }
 
         .sliderG::-moz-range-thumb {
-            width: 25px; /* Set a specific slider handle width */
-            height: 25px; /* Slider handle height */
-            background: #00ff00; /* Green background */
-            cursor: pointer; /* Cursor on hover */
+            background: #00ff00; /* green background */
         }
 
-        /* blue */
-        .sliderB {
-            -webkit-appearance: none;  /* Override default CSS styles */
-            appearance: none;
-            width: 100%; /* Full-width */
-            height: 15px; /* Specified height */
-            background: #d3d3d3; /* Grey background */
-            outline: none; /* Remove outline */
-            opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
-            -webkit-transition: .2s; /* 0.2 seconds transition on hover */
-            transition: opacity .2s;
-        }
-
-        /* Mouse-over effects */
-        .sliderB:hover {
-            opacity: 1; /* Fully shown on mouse-over */
-        }
-
-        /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */ 
         .sliderB::-webkit-slider-thumb {
-            -webkit-appearance: none; /* Override default look */
-            appearance: none;
-            width: 35px; /* Set a specific slider handle width */
-            background: #0000ff; /* Green background */
-            height: 35px; /* Slider handle height */
-            border-radius: 50%;
-            cursor: pointer; /* Cursor on hover */
+            background: #0000ff; /* blue background */
         }
 
         .sliderB::-moz-range-thumb {
-            width: 25px; /* Set a specific slider handle width */
-            height: 25px; /* Slider handle height */
-            background: #0000ff; /* Green background */
-            cursor: pointer; /* Cursor on hover */
+            background: #0000ff; /* blue background */
         }
 
-
-        .green{
-            background: "#00ff00";
-        }
-
-        .blue{
-            background: "#0000ff";
-        }   
     </style>
 </head>
 
@@ -158,7 +99,7 @@
     <div container>
         <div row>
             <div col>
-                <h1 style="text-align:center">Catch the Ball - If You Can!</h1>
+                <h1 style="text-align:center">Can You Click the Ball 50 Times?</h1>
                 <div style="text-align:center">
                     <canvas id="game" width="1200" height="600" margin-top="30px">
                         This would have been a great interactive game. Plz try on a canvas-friendly browser!
@@ -169,12 +110,14 @@
         <div row>
             <div col>
                 <div class="slidecontainer">
-                    <h2 class = "redLabel" >Red:</h2>
-                    <input type="range" min="0" max="255" value="112" class="sliderR" id="redRange">
-                    <h2 class="greenLabel">Green:</h2>
-                    <input type="range" min="0" max="255" value="112" class="sliderG" id="greenRange">
-                    <h2 class="blueLabel">Blue:</h2>
-                    <input type="range" min="0" max="255" value="112" class="sliderB" id="blueRange">
+                    <label class = "redLabel" for="redRange">Red:</label>
+                    <input type="range" min="0" max="255" value="112" class="sliderR slider" id="redRange">
+
+                    <label class="greenLabel" for="greenRange">Green:</label>
+                    <input type="range" min="0" max="255" value="112" class="sliderG slider" id="greenRange">
+                    
+                    <label class="blueLabel" for="blueRange">Blue:</label>
+                    <input type="range" min="0" max="255" value="112" class="sliderB slider" id="blueRange">
                 </div>
             </div>
         </div>
