@@ -17,16 +17,6 @@ redRange.value = initialRed; //updates the sliders initially
 greenRange.value = initialGreen;
 blueRange.value = initialBlue;
 
-var ballRadius = 100;
-
-var speedX = 5;
-var speedY = 3;
-var moveRight = true;
-var moveDown = true;
-
-var clickCount = 0;
-var totalCount = 0;
-
 var sliderUpdates = function(){
     $( ".redLabel" ).empty();
     $( ".redLabel" ).append("<label> Red: " + redRange.value + "</label>");
@@ -37,6 +27,20 @@ var sliderUpdates = function(){
     $( ".blueLabel" ).empty();
     $( ".blueLabel" ).append("<label> Blue: " + blueRange.value + "</label>");
 }
+
+sliderUpdates();
+
+var ballRadius = 100;
+
+var speedX = 5;
+var speedY = 3;
+var moveRight = true;
+var moveDown = true;
+
+var clickCount = 0;
+var totalCount = 0;
+
+
 
 function animate(){
     context.fillStyle = "black";
