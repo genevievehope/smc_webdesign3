@@ -92,6 +92,7 @@ function animate(){
 }
 
 function endGame(){
+    ballRadius = 1000;
     context.font = "50px Acme";
     context.fillStyle = "red";
     context.fillText("Congratulations!", 50, 90);
@@ -130,7 +131,6 @@ canvas.addEventListener("click", function(event){
     } 
     
     if(clickCount == 5){
-        ballRadius = 3000;
         endGame();
     }
 })
