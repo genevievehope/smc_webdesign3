@@ -86,9 +86,13 @@ function animate(){
     context.fillStyle = "red";
     context.fillText("Ball Clicks: " + clickCount, 10, 50);
     context.fillText("Total Clicks: " + totalCount, 10, 85);
+
+    var sliderChoice = "rgb(" + redRange.value + "," + greenRange.value + "," + blueRange.value + ")";
+    ballColor = sliderChoice;
 }
 
 animate();
+
 
 canvas.addEventListener("click", function(event){
 
@@ -109,11 +113,9 @@ canvas.addEventListener("click", function(event){
     console.log("DistY" + distY);
 
 
-    var sliderChoice = "rgb(" + redRange.value + "," + greenRange.value + "," + blueRange.value + ")";
-
     if( distX < ballRadius && distY < ballRadius){
         console.log('CLICK!!!!!');
-        ballColor = sliderChoice;
+        
         ballRadius = Math.floor(Math.random() * 150) + 100;
         speedX = speedX + .5;
         speedY = speedY + .5;
