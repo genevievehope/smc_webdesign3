@@ -91,6 +91,12 @@ function animate(){
     ballColor = sliderChoice;
 }
 
+function endGame(){
+    context.font = "50px Acme";
+    context.fillStyle = "red";
+    context.fillText("Congratulations!", 50, 90);
+}
+
 animate();
 
 
@@ -121,7 +127,12 @@ canvas.addEventListener("click", function(event){
         speedY = speedY + .5;
         clickCount++;
         console.log(clickCount);
-    }  
+    } 
+    
+    if(clickCount == 5){
+        ballRadius = 3000;
+        endGame();
+    }
 })
 
 // var slider = document.getElementById("myRange");
