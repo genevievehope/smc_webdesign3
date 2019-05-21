@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Media Embeds</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1>Embedding Media into Websites</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <h2>YouTube</h2>
+          <iframe width="100%" height="325" src="https://www.youtube.com/embed/Z75QuC9TuHY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <h2>Google Maps</h2>
+          <div class="mapouter">
+            <div class="gmap_canvas">
+              <iframe width="100%" height="325" id="gmap_canvas" src="https://maps.google.com/maps?q=seattle&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            </div>
+            <style>.mapouter{text-align:center;height:325px;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:325px;width:100%;}</style>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <h2>Responsive Picture with Sourcesets</h2>
+          <picture>
+              <source srcset="https://passport-cdn.kiwicollection.com/blog/drive/uploads/2017/11/Treehotel-693x390.jpg" width="100%" media="(min-width: 800px)" type="image/jpg">
+              <source srcset="https://travelwirenews.com/wp-content/uploads/2018/03/126240380.jpg" width = "100%" media="(min-width: 700px)" type="image/png">
+              <img src="http://smallforbig.com/wp-content/uploads/2016/05/tree_houses.jpg" width = "100%" media="(min-width: 500px)" alt="Default image">
+          </picture>
+        </div>
+      </div>
+      <div class="row">
+        <div class = "col">
+          <h2>Audio or Video with Controls</h2>
+          <video controls loop="loop" muted poster="https://www.fnordware.com/superpng/pnggrad16rgb.png"> 
+            <source src="big_buck_bunny_480p_stereo.ogg" type="video/ogg">
+            <source src="sample.mp4" type="video/mp4">
+            <source src="sample.webm" type="video/webm">
+          </video>
+    
+          <audio controls>
+            <source src="sample.mp3" type="audio/mp3">
+            <source src="sample.ogg" type="audio/ogg">
+            <source src="sample.wav" type="audio/wav">
+          </audio>
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
