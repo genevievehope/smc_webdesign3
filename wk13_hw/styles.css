@@ -15,3 +15,8 @@ h2{
 iframe{
     text-align: center;
 }
+
+audio{
+    display: table;
+    margin: 0px auto 30px;
+}
