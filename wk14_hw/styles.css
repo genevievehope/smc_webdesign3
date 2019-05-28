@@ -1,0 +1,115 @@
+container.no-margin{
+    margin:0 ! important;
+    }
+
+.navbar-custom {
+    background-color: #ff5500;
+}
+
+form{
+    background-color: white;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    padding: 8px;
+}
+
+nav{
+    margin-bottom: 30px;
+}
+
+.td{
+    width: 100%;
+}
+
+body{
+    background-color: #b3ddff;
+}
+
+.row{
+    background-color: #b3ddff;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+ul{
+    display: inline-block;
+}
+
+.col-3{
+    padding: 10px;
+}
+
+button{
+    margin-top: -20px;
+    background-color: #b3ddff;
+    border-width: 0;
+    color: #0070ae;
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+button:hover{
+    color: white;
+}
+
+button:focus {
+    outline:0;
+    font-weight: bold;
+}
+
+.logo{
+    margin-right: 38%;
+}
+
+h1{
+    font-size: 22px;
+    text-align: left;
+    color: #0070ae;
+}
+
+h2{
+    font-size: 18px;
+    text-align: left;
+}
+
+.card{
+    border-radius: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 8px;
+}
+
+.cardImg{
+    width: 100%;
+    border-radius: 20px;
+}
+
+table{
+    margin-bottom: 20px;
+}
+
+.tableText{
+    margin-left: 10px;
+    padding-top: 12px;
+}
+
+/* .logoHover:hover{
+    img src = "boardingschool2.png";
+}
+
+.logoHover2{
+    display: none;
+} */
+
+.carousel img {
+    margin-bottom: 30px;
+}
+
+.carousel-inner{
+    margin-bottom: 15px;
+}
+
+.carousel{
+    border-color: rgb(231, 204, 169);
+    border-width: 3px;
+}
