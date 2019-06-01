@@ -1,3 +1,5 @@
+/* STYLES */
+
 container.no-margin{
     margin:0 ! important;
 }
@@ -78,6 +80,10 @@ h3{
     font-weight: bolder;
 }
 
+.cartCount{
+    display: inline;
+}
+
 .newCard{
     border-radius: 10px;
     text-align: center;
@@ -119,6 +125,26 @@ td{
 
 .input-group{
     margin-left: 50px;
+}
+
+.checkoutInput{
+    border-radius: 5px;
+    width: 500px;
+    border-width: 1px;
+    border-color: #acefef;
+}
+
+half{
+    width: 200px ! important;
+}
+
+.checkout{
+    text-align: left;
+    width: 150px;
+}
+
+.checkoutRow{
+    border-spacing: 100px;
 }
 
 table{
@@ -184,7 +210,7 @@ body {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
     font-family: 'PT Sans Narrow', sans-serif;
     background-color: white;
 }
@@ -236,10 +262,14 @@ button{
     .newCard{
         width: 46.67%;
     }
+
+    .cartCount{
+        display: inline;
+    }
 }
 
 /* 600px and under */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
       float: right;
@@ -254,6 +284,10 @@ button{
 
     table{
         float: center;
+    }
+
+    .cartCount{
+        display: inline;
     }
 }
 

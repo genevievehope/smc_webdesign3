@@ -18,6 +18,25 @@ $(document).ready(function(){
     
     updateCount();
 
+    $(".myFunction").click(function(){
+        burgerMenu();
+    });
+
+    function burgerMenu() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+        x.className += " responsive";
+        } else {
+        x.className = "topnav";
+        }
+    }
+
+    $('.modal-popper').click(function(){
+        $('.modal').modal( {backdrop: 'static'} );
+    });
+    
+    
+
 
 
 

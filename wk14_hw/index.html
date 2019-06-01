@@ -28,14 +28,18 @@
             <!-- <a class="notLogo" href="javascript:void(0);" class="icon" onclick="otherFunction()">
                 
             </a> -->
-            <a class="notLogo" href="pages/contact.html">CONTACT</a>
+            <a class="notLogo modal-popper longWidth" href="#">CONTACT</a>
             <a class="notLogo" href="pages/lessons.html">LESSONS</a>
             <a class="notLogo" href="pages/swimwear.html">SWIMWEAR</a>
             <a class="notLogo" href="pages/boards.html">BOARDS</a>
             
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <!-- start of hamburger menu -->
+            <a class="icon">
+              <button class="myFunction">
                 <i class="fa fa-bars"></i>
+              </button>
             </a>
+            <!-- end of hamburger menu -->
         </div>
         <!-- <hr class="featurette-divider"> -->
     </nav> 
@@ -115,6 +119,63 @@
         <iframe width="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=30225%20W%20Grand%20Ave%20Parking&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0">
         </iframe>
       </div>
+    </div>
+
+    <div class="modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title">Reach out!</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+                  <form>
+                      <table class="table-responsive">
+                          <tbody>
+                              <tr>
+                                  <td scope="row">
+                                      <p class="dark">Name: </p>
+                                  </td>
+                                  <td>
+                                      <input type="text" name="name" placeholder="Last, First">
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td scope="row">
+                                      <p class="dark">Email: </p>
+                                  </td>
+                                  <td>
+                                      <input type="text" name="email" placeholder="totem@poles.com">
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td scope="row">
+                                      <p class="dark">How often do you want our newsletter?</p>
+                                  </td>
+                                  <td>
+                                      <select name="howOften">
+                                          <option value="volvo">once a day</option>
+                                          <option value="saab">once a week</option>
+                                          <option value="fiat">once a month</option>
+                                          <option value="audi">never</option>
+                                      </select>
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </form>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="dark" data-dismiss="modal">Close</button>
+                  <button type="button" class="dark" data-dismiss="modal">Submit</button>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- end of modal -->
+    
     
 
     <!-- Optional JavaScript -->
