@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="styles.css">
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: white;
+}
+
+.topnav a {
+  display: inline-block;
+  color: #0070ae;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'PT Sans Narrow', sans-serif;
+  background-color: white;
+}
+
+.topnav a:hover {
+  background-color: white;
+  color: #b3ddff;
+}
+
+.topnav .icon {
+  display: none;
+  margin-top: 20px;
+}
+
+.notLogo{
+  margin-top: 20px;
+  margin-right: 20px;
+  float: right;
+}
+
+.logo{
+  float: left;
+  background-color: white;
+}
+
+hr{
+  border-color: #0070ae;
+  margin-top: 0px;
+  margin-bottom: 30px;
+  margin-left: -15px;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="topnav" id="myTopnav" id="logo">
+  <a href="index.html" class="active">
+    <img src="boardingschool.png" class="logo" rel="logo">
+  </a>
+  <a class="notLogo" href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-shopping-cart"></i>
+  </a>
+  <a class="notLogo" href="pages/lessons.html">LESSONS</a>
+  <a class="notLogo" href="pages/swimwear.html">SWIMWEAR</a>
+  <a class="notLogo" href="pages/boards.html">BOARDS</a>
+  
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<hr class="featurette-divider">
+
+<div style="padding-left:16px">
+  <h2>Responsive Topnav Example</h2>
+  <p>Resize the browser window to see how it works.</p>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+
+<p>Click the button to sort the list ascending (A to Z):</p>
+<p>Click again to sort the list descending (Z to A):</p>
+
+<button onclick="sortListDir()">Sort</button>
+
+<ul id="id01">
+  <li price=1>Oslo</li>
+  <li price=4>Stockholm</li>
+  <li price=5>Helsinki</li>
+  <li price=3>Berlin</li>
+  <li price=6 >Rome</li>
+  <li price=2>Madrid</li>
+</ul>
+
+<script>
+function sortListDir() {
+  var list, i, switching, b, shouldSwitch, dir, switchcount = 0;
+  list = document.getElementById("id01");
+  switching = true;
+  // Set the sorting direction to ascending:
+  dir = "asc"; 
+  // Make a loop that will continue until no switching has been done:
+  while (switching) {
+    // start by saying: no switching is done:
+    switching = false;
+    b = list.getElementsByTagName("LI");
+    // Loop through all list-items:
+    for (i = 0; i < (b.length - 1); i++) {
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+      /* check if the next item should switch place with the current item,
+      based on the sorting direction (asc or desc): */
+      if (dir == "asc") {
+        if (b[i].innerHTML.toLowerCase() > b[i + 1].innerHTML.toLowerCase()) {
+          /* if next item is alphabetically lower than current item,
+          mark as a switch and break the loop: */
+          shouldSwitch = true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (b[i].innerHTML.toLowerCase() < b[i + 1].innerHTML.toLowerCase()) {
+          /* if next item is alphabetically higher than current item,
+          mark as a switch and break the loop: */
+          shouldSwitch= true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      /* If a switch has been marked, make the switch
+      and mark that a switch has been done: */
+      b[i].parentNode.insertBefore(b[i + 1], b[i]);
+      switching = true;
+      // Each time a switch is done, increase switchcount by 1:
+      switchcount ++;
+    } else {
+      /* If no switching has been done AND the direction is "asc",
+      set the direction to "desc" and run the while loop again. */
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+</script>
+
+
+
+
+</body>
+</html>

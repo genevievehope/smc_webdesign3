@@ -8,25 +8,43 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="main.js"></script>
 
     <title>Boarding School</title>
   </head>
+
   <body>
+      <nav>
+        <div class="topnav" id="myTopnav" id="logo">
+            <a href="index.html" id="Library" class="active">  
+                <img src="boardingschool.png" class="logo" rel="logo">
+            </a>
+            <a href="pages/cart.html" class="cartCount notLogo">
+                <i class="fa fa-shopping-cart"></i>
+            </a>
+            <!-- <a class="notLogo" href="javascript:void(0);" class="icon" onclick="otherFunction()">
+                
+            </a> -->
+            <a class="notLogo" href="pages/contact.html">CONTACT</a>
+            <a class="notLogo" href="pages/lessons.html">LESSONS</a>
+            <a class="notLogo" href="pages/swimwear.html">SWIMWEAR</a>
+            <a class="notLogo" href="pages/boards.html">BOARDS</a>
+            
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <!-- <hr class="featurette-divider"> -->
+    </nav> 
+
     <div class= "container">
         <div class="row">
-            <div class="col">
-                <nav>
-                    <a href="index.html">
-                        <img class = "logo logoHover" width = "300px" src="boardingschool.png" alt="logo">
-                        <!-- <img class = "logoHover2" width = "250px" src="boardingschool2.png" alt="logo"> -->
-                    </a>
-                    <button onclick="window.location.href='pages/boards.html'">BOARDS</button>
-                    <button onclick="window.location.href='pages/swimwear.html'">SWIMWEAR</button>
-                    <button onclick="window.location.href='pages/lessons.html'">LESSONS</button>
-                    <button onclick="window.location.href='pages/cart.html'">CART</button>
-                </nav> 
-            </div>
+          <div class="col">
+            <h5>Internationally Ranked #1 Surf School Since 2016</h5>
+          </div>
         </div>
         <div class="row">
           <div class="col">
@@ -69,10 +87,34 @@
                 </a>
               </div>
               <!-- end of carousel -->
-          </div>
         </div>
-
+        
+      </div>
+      <div class="row">
+        <div class= "col-12">
+          <h5>The School Experience</h5>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12">
+            <iframe width="100%" height="310px" src="https://www.youtube.com/embed/6bQWpv9wUSY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12">
+            <iframe width="100%" height="310px" src="https://www.youtube.com/embed/e6M6XQTSRU0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <h5>Where to Meet</h5>
+        </div>
     </div>
+
+    
+    </div>
+
+    <div class="mapouter">
+      <div class="gmap_canvas">
+        <iframe width="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=30225%20W%20Grand%20Ave%20Parking&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0">
+        </iframe>
+      </div>
     
 
     <!-- Optional JavaScript -->
