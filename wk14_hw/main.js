@@ -26,8 +26,8 @@ $(document).ready(function(){
     function toggleBeaters(){
         beater = document.getElementsByClassName("beater")
         console.log(beater)
-        HTMLCollection[0].style.display == "none"
-        console.log(HTMLCollection[0].style.display);
+        $("beater").hide();
+
         // if (beater.style.display == ""){
         //     beater.style.display == "none"
         // }

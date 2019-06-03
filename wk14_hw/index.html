@@ -19,7 +19,7 @@
   <body>
       <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <a class="navbar-brand active" id="Library" href="index.html">
-            <img src="boardingschool.png" class="logo" rel="logo">
+          <img src="boardingschool.png" class="logo" rel="logo">
         </a>
         
         
@@ -126,52 +126,37 @@
       <div class="modal-dialog" role="document">
           <div class="modal-content">
               <div class="modal-header">
-                  <h5 class="modal-title">Reach out!</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                  </button>
-              </div>
-              <div class="modal-body">
-                  <form>
-                      <table class="table-responsive">
-                          <tbody>
-                              <tr>
-                                  <td scope="row">
-                                      <p class="dark">Name: </p>
-                                  </td>
-                                  <td>
-                                      <input type="text" name="name" placeholder="Last, First">
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td scope="row">
-                                      <p class="dark">Email: </p>
-                                  </td>
-                                  <td>
-                                      <input type="text" name="email" placeholder="totem@poles.com">
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td scope="row">
-                                      <p class="dark">How often do you want our newsletter?</p>
-                                  </td>
-                                  <td>
-                                      <select name="howOften">
-                                          <option value="volvo">once a day</option>
-                                          <option value="saab">once a week</option>
-                                          <option value="fiat">once a month</option>
-                                          <option value="audi">never</option>
-                                      </select>
-                                  </td>
-                              </tr>
-                          </tbody>
-                      </table>
+                  <form class="needs-validation" novalidate>
+                    <div class="form-row">
+                      <h5>Reach out!</h5>
+                    </div>
+                    <div class="form-row">
+                      <div class="col-md-6 mb-3">
+                        <label for="validationCustom01">First Name</label>
+                        <input type="text" class="form-control" id="validationCustom01" placeholder="Bethany" required>
+                        <div class="valid-feedback">
+                          Looks good!
+                        </div>
+                      </div>
+                      <div class="col-md-6 mb-3">
+                        <label for="validationCustom02">Last Name</label>
+                        <input type="text" class="form-control" id="validationCustom02" placeholder="Hamilton" required>
+                        <div class="valid-feedback">
+                          Looks good!
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="col-md-12 mb-3">
+                        <label>Questions & Comments</label><br>
+                        <textarea name="Text1"></textarea>
+                      </div>
+                    </div>
+                    <hr class="featurette-divider">
+                        <button type="button" data-dismiss="modal">Close</button>
+                        <button type="button" data-dismiss="modal">Submit</button>
+                    </div>
                   </form>
-              </div>
-              <div class="modal-footer">
-                  <button type="button" class="dark" data-dismiss="modal">Close</button>
-                  <button type="button" class="dark" data-dismiss="modal">Submit</button>
-              </div>
           </div>
       </div>
   </div>
