@@ -10,13 +10,39 @@ $(document).ready(function(){
 
         updateCount();
     });
-    
+
     function updateCount(){
         $( ".cartCount" ).empty();
         $( ".cartCount" ).append(cartItems + '    <i class="fa fa-shopping-cart"></i>');
     }
     
     updateCount();
+    
+
+    $(".sortBeaters").click(function(){
+        toggleBeaters();
+    });
+
+    function toggleBeaters(){
+        beater = document.getElementsByClassName("beater")
+        console.log(beater)
+        HTMLCollection[0].style.display == "none"
+        console.log(HTMLCollection[0].style.display);
+        // if (beater.style.display == ""){
+        //     beater.style.display == "none"
+        // }
+        // else if (beater.style.display == "block"){
+        //     beater.style.display ==
+        // }
+
+        // if beater.style == "block"{
+        //     beater.style == "none";
+        // }
+        // else{
+        //     beater.style == "block";
+        // }
+    }
+
 
     $(".myFunction").click(function(){
         burgerMenu();

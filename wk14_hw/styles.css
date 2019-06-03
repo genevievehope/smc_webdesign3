@@ -1,5 +1,63 @@
 /* STYLES */
 
+p{
+    color: #0070ae;
+}
+
+.navbar{
+    font-family: 'PT Sans', sans-serif;
+    color: #0070ae;
+
+}
+
+.h6{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 30px;
+}
+
+.navbar:hover{
+    color: #acefef;
+}
+
+.navbar-expand-lg .navbar-collapse{
+    justify-content: flex-end;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #0070ae;
+    font-size: 18px;
+}
+
+.navbar-light:hover .navbar-nav:hover .nav-link:hover {
+    color: #acefef;
+}
+
+.navbar-toggler{
+    border: 0px;
+    color: #0070ae ! important;
+    margin-top: 2px;
+}
+
+.navbar-toggler:hover{
+    color: #acefef ! important;
+}
+
+/* a{
+    color: #0070ae;
+}
+
+a:hover{
+    color: #acefef;
+}
+
+.fa{
+    color: #0070ae;
+}
+
+.fa:hover{
+    color: #acefef;
+} */
+
 container.no-margin{
     margin:0 ! important;
 }
@@ -82,6 +140,11 @@ h3{
 
 .cartCount{
     display: inline;
+    color: #0070ae;
+}
+
+.cartCount:hover{
+    color: #acefef;
 }
 
 .newCard{
@@ -160,13 +223,18 @@ table{
     padding-top: 12px;
 }
 
-.carousel img {
-    margin-bottom: 30px;
-}
-
 .carousel{
     border-color: rgb(231, 204, 169);
     border-width: 3px;
+}
+
+.carousel-caption{
+    background-color: #0070af;
+    width: 100%;
+    right: 0%;
+    left: 0%;
+    height: 100px;
+    padding: 0px;
 }
 
 iframe{
@@ -224,13 +292,7 @@ body {
     display: none;
     margin-top: 20px;
 }
-  
-.notLogo{
-    margin-top: 20px;
-    margin-right: 20px;
-    float: right;
-}
-  
+
 .logo{
     float: left;
     background-color: white;
@@ -239,7 +301,7 @@ body {
 
 hr{
     border-color: #0070ae;
-    margin-top: 0px;
+    margin-top: 30px;
     margin-bottom: 30px;
 }
 

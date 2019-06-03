@@ -17,32 +17,29 @@
   </head>
 
   <body>
-      <nav>
-        <div class="topnav" id="myTopnav" id="logo">
-            <a href="index.html" id="Library" class="active">  
-                <img src="boardingschool.png" class="logo" rel="logo">
-            </a>
-            <a href="pages/cart.html" class="cartCount notLogo">
-                <i class="fa fa-shopping-cart"></i>
-            </a>
-            <!-- <a class="notLogo" href="javascript:void(0);" class="icon" onclick="otherFunction()">
-                
-            </a> -->
-            <a class="notLogo modal-popper longWidth" href="#">CONTACT</a>
-            <a class="notLogo" href="pages/lessons.html">LESSONS</a>
-            <a class="notLogo" href="pages/swimwear.html">SWIMWEAR</a>
-            <a class="notLogo" href="pages/boards.html">BOARDS</a>
-            
-            <!-- start of hamburger menu -->
-            <a class="icon">
-              <button class="myFunction">
-                <i class="fa fa-bars"></i>
-              </button>
-            </a>
-            <!-- end of hamburger menu -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <a class="navbar-brand active" id="Library" href="index.html">
+            <img src="boardingschool.png" class="logo" rel="logo">
+        </a>
+        
+        
+        <a class="nav-item nav-link cartCount" style="margin-right:0px" href="pages/cart.html" tabindex="-1">
+            <i class="fa fa-shopping-cart"></i>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa fa-bars"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="pages/boards.html">BOARDS</a>
+                <a class="nav-item nav-link" href="pages/swimwear.html">SWIMWEAR</a>
+                <a class="nav-item nav-link" href="pages/lessons.html">LESSONS</a>
+                <a class="nav-item modal-popper nav-link" href="#">CONTACT</a>
+            </div>
         </div>
-        <!-- <hr class="featurette-divider"> -->
-    </nav> 
+      </nav> 
 
     <div class= "container">
         <div class="row">
@@ -56,8 +53,8 @@
                 <div class="carousel-inner">
                   <div class="carousel-item active">
                     <img src="home_imgs/a.jpg" alt="thailand">
-                      <div class="carousel-caption text-right">
-                        <h3>Family Discounts</h3>
+                      <div class="carousel-caption">
+                        <h6>FAMILY DISCOUNTS</h6>
                         <p class="lead">Kids under 15 surf for free if enrolled in a lesson with at least one guardian!</p>
                       </div>
                   </div>
@@ -65,7 +62,7 @@
                   <div class="carousel-item">
                     <img src="home_imgs/b.jpg" width="100%" alt="mexico">
                         <div class="carousel-caption text-right">
-                          <h3>One for All and All for One</h3>
+                          <h6>One for All and All for One</h6>
                           <p class="lead">Buy 3 surfboards for the price of one between June 1-30, 2019! While supplies last.</p>
                         </div>
                   </div>
@@ -73,7 +70,7 @@
                   <div class="carousel-item">
                     <img src="home_imgs/c.jpg" alt="philipines" width="100%">
                       <div class="carousel-caption text-top-left">
-                        <h3>Free Rashguard Fridays</h3>
+                        <h6>Free Rashguard Fridays</h6>
                         <p class="lead">If you're signed up for a camp on Fridays, we provide rashguards! Must be returned by the end of day.</p>
                       </div>
                   </div>
@@ -96,17 +93,21 @@
       </div>
       <div class="row">
         <div class= "col-12">
+          <hr class="featurette-divider">
           <h5>The School Experience</h5>
         </div>
         <div class="col-lg-6 col-md-12 col-sm-12">
             <iframe width="100%" height="310px" src="https://www.youtube.com/embed/6bQWpv9wUSY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>Florence water stale fish frothing reef rash kook, transition. Flow hack blitz ocean point break, lip line cartwheels. Critical puff amped shinner, shorebreak nose precise jumbled heavy slice. Blow tail high on the face ripper, kick out lip line. Spittin' backhand attack swell, swamped thruster shack. Deep lip swamped rain Owen Wright double overhead nuggets of heaven Bells blitz.</p>
         </div>
         <div class="col-lg-6 col-md-12 col-sm-12">
             <iframe width="100%" height="310px" src="https://www.youtube.com/embed/e6M6XQTSRU0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>Jamie O'Brien wall ice cream headaches back dooring shacks stick rocker bro board capped out. Rail Jeffreys Bay glassy swamped tight section make the paddle shred wonky. Rad back dooring poor brah pitted fins free salt water aerial. Drainer full rotation combination snake backhand hack rip the pit explosive. Loose mellow double-up psyched pose on the nose, technique psyching.</p>
         </div>
       </div>
       <div class="row">
         <div class="col">
+          <hr class="featurette-divider">
           <h5>Where to Meet</h5>
         </div>
     </div>

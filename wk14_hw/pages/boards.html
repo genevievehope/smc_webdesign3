@@ -17,35 +17,41 @@
   </head>
 
   <body>
-    <nav>
-        <div class="topnav" id="myTopnav" id="logo">
-            <a href="../index.html" id="Library" class="active">  
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <a class="navbar-brand active" id="Library" href="../index.html">
                 <img src="../boardingschool.png" class="logo" rel="logo">
             </a>
-            <a href="cart.html" class="cartCount notLogo">
-                
+            
+            
+            <a class="nav-item nav-link cartCount" style="margin-right:0px" href="cart.html" tabindex="-1">
                 <i class="fa fa-shopping-cart"></i>
             </a>
-            <!-- <a class="notLogo" href="javascript:void(0);" class="icon" onclick="otherFunction()">
-                
-            </a> -->
-            <a class="notLogo" href="contact.html">CONTACT</a>
-            <a class="notLogo" href="lessons.html">LESSONS</a>
-            <a class="notLogo" href="swimwear.html">SWIMWEAR</a>
-            <a class="notLogo" href="boards.html">BOARDS</a>
-            
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fa fa-bars"></i>
-            </a>
-        </div>
-        <!-- <hr class="featurette-divider"> -->
-    </nav> 
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="boards.html">BOARDS</a>
+                    <a class="nav-item nav-link" href="swimwear.html">SWIMWEAR</a>
+                    <a class="nav-item nav-link" href="lessons.html">LESSONS</a>
+                    <a class="nav-item modal-popper nav-link" href="#">CONTACT</a>
+                </div>
+            </div>
+        </nav> 
 
     <div class= "container">
             <div class="row">
                     <div class="col-lg-3 col-md-4 col-sm-6">
-                        <form class="boardFilters">
+                        <button id="sortBeater" class="sortBeaters">
+                            Beaters
+                        </button>
+                            <form class="boardFilters">
                             <h1>Board Style</h1>
+                            
+                            
+
                             <table width="100%">
                                 <tbody>
                                     <tr>
@@ -113,7 +119,7 @@
                     </div>
 
                     <div class="col-lg-9 col-md-8 col-sm-6">
-                        <div class="newCard">
+                        <div class="newCard beater">
                             <img src="../board_imgs/g.jpg" alt="g" width="100%">
                             <h1 class="boardName">Original 54 Pro X Tyler Stanaland</h1>
                             <table style="width:100%">
@@ -131,7 +137,7 @@
                             </button>
                         </div>
 
-                        <div class="newCard">
+                        <div class="newCard beater">
                             <img src="../board_imgs/a.jpg" alt="a" width="100%">
                             <h1 class="boardName">Dipped in Styx</h1>
                             <table style="width:100%">
@@ -149,7 +155,7 @@
                             </button>
                         </div>
 
-                        <div class="newCard">
+                        <div class="newCard longboard">
                             <img src="../board_imgs/b.jpg" alt="b" width="100%">
                             <h1 class="boardName">Cool Chaser</h1>
                             <table style="width:100%">
@@ -167,7 +173,7 @@
                             </button>
                         </div>
 
-                        <div class="newCard">
+                        <div class="newCard fish">
                             <img src="https://images.evo.com/imgp/700/149939/633083/softech-kyuss-fish-fcs-ii-5-8-surfboard-5-8.jpg" alt="a" width="100%">
                             <h1 class="boardName">Softech Kyuss Fish FCS II 5'8 Surfboard</h1>
                             <table style="width:100%">
@@ -185,7 +191,7 @@
                             </button>
                         </div>
 
-                        <div class="newCard">
+                        <div class="newCard longboard">
                             <img src="https://cdn.shopify.com/s/files/1/1819/8849/files/bing-longboards-levitator_1024x1024.jpg?97" alt="a" width="100%">
                             <h1 class="boardName">Levitator</h1>
                             <table style="width:100%">
@@ -203,7 +209,7 @@
                             </button>
                         </div>
 
-                        <div class="newCard">
+                        <div class="newCard fish">
                             <img src="https://cdn.shopify.com/s/files/1/0003/1902/9309/products/even_keel_blu_2000x.jpg?v=1553741741" alt="a" width="100%">
                             <h1 class="boardName">Azure Fiberglass</h1>
                             <table style="width:100%">
@@ -221,7 +227,7 @@
                             </button>
                         </div>
 
-                        <div class="newCard">
+                        <div class="newCard beater">
                             <img src="../board_imgs/c.jpg" alt="c" width="100%">
                             <h1 class="boardName">Original 54 Pro X Tyler Stanaland</h1>
                             <table style="width:100%">
@@ -239,7 +245,7 @@
                             </button>
                         </div>
 
-                        <div class="newCard">
+                        <div class="newCard beater">
                             <img src="https://cdn.shopify.com/s/files/1/1154/7998/products/BO54PRO_JOB_L3_SK18_TB_1024x1024.jpg?v=1557857931" alt="a" width="100%">
                             <h1 class="boardName">Original 54 Pro X Jamie O'Brien</h1>
                             <table style="width:100%">
@@ -257,7 +263,7 @@
                             </button>
                         </div>
 
-                        <div class="newCard">
+                        <div class="newCard fish">
                             <img src="../board_imgs/d.jpg" alt="d" width="100%">
                             <h1 class="boardName">Seawash X Jasmine Patel</h1>
                             <table style="width:100%">
@@ -275,7 +281,7 @@
                             </button>
                         </div>
 
-                        <div class="newCard">
+                        <div class="newCard beater">
                             <img src="../board_imgs/e.jpg" alt="e" width="100%">
                             <h1 class="boardName">McSpeedster Shortboard</h1>
                             <table style="width:100%">
@@ -293,7 +299,7 @@
                             </button>
                         </div>
 
-                        <div class="newCard">
+                        <div class="newCard longboard">
                             <img src="../board_imgs/f.jpg" alt="f" width="100%">
                             <h1 class="boardName">Wavestorm Foamboard (Good for Beginners)</h1>
                             <table style="width:100%">
@@ -311,7 +317,7 @@
                             </button>
                         </div>
 
-                        <div class="newCard">
+                        <div class="newCard longboard">
                             <img src="https://images.evo.com/imgp/700/140268/637961/catch-surf-odysea-9-0-plank-single-fin-longboard-blue-curacao.jpg" alt="f" width="100%">
                             <h1 class="boardName">Catch Surf Odysea 9'0" Plank Single Fin Longboard</h1>
                             <table style="width:100%">

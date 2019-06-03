@@ -16,28 +16,29 @@
     <title>Boarding School</title>
   </head>
   <body>
-    <nav>
-        <div class="topnav" id="myTopnav" id="logo">
-            <a href="../index.html" id="Library" class="active">  
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <a class="navbar-brand active" id="Library" href="../index.html">
                 <img src="../boardingschool.png" class="logo" rel="logo">
             </a>
-            <a href="cart.html" class="cartCount notLogo">
+            
+            
+            <a class="nav-item nav-link cartCount" style="margin-right:0px" href="cart.html" tabindex="-1">
                 <i class="fa fa-shopping-cart"></i>
             </a>
-            <!-- <a class="notLogo" href="javascript:void(0);" class="icon" onclick="otherFunction()">
-                
-            </a> -->
-            <a class="notLogo" href="contact.html">CONTACT</a>
-            <a class="notLogo" href="lessons.html">LESSONS</a>
-            <a class="notLogo" href="swimwear.html">SWIMWEAR</a>
-            <a class="notLogo" href="boards.html">BOARDS</a>
-            
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fa fa-bars"></i>
-            </a>
-        </div>
-        <!-- <hr class="featurette-divider"> -->
-    </nav>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="boards.html">BOARDS</a>
+                    <a class="nav-item nav-link" href="swimwear.html">SWIMWEAR</a>
+                    <a class="nav-item nav-link" href="lessons.html">LESSONS</a>
+                    <a class="nav-item modal-popper nav-link" href="#">CONTACT</a>
+                </div>
+            </div>
+            </nav> 
 
     <div class= "container">
         <div class="row">
