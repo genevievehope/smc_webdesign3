@@ -82,6 +82,10 @@ form{
     margin-bottom: 30px;
 }
 
+.centered{
+    text-align: center;
+}
+
 .form-group{
     margin-top: 20px;
 }
@@ -148,6 +152,15 @@ h1{
     color: #0070ae;
 }
 
+h4{
+    font-size: 25px;
+    text-align: center;
+    margin: auto;
+    color: #0070ae;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 h2{
     font-size: 18px;
     text-align: left;
@@ -205,15 +218,12 @@ td{
     text-align: center;
 }
 
-/* .col-lg-3{
-    background-color: yellow;
-} */
-
 .card{
-    border-radius: 10px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    border-width: 0px;
     margin-bottom: 30px;
-    text-align: center;
-    padding: 8px;
 }
 
 .cardImg{
