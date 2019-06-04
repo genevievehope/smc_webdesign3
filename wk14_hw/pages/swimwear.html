@@ -17,44 +17,495 @@
   </head>
 
   <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-white">
-            <a class="navbar-brand active" id="Library" href="../index.html">
-                <img src="../boardingschool.png" class="logo" rel="logo">
-            </a>
-            
-            
-            <a class="nav-item nav-link cartCount" style="margin-right:0px" href="cart.html" tabindex="-1">
-                <i class="fa fa-shopping-cart"></i>
-            </a>
-    
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fa fa-bars"></i>
-            </button>
-    
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-item nav-link" href="boards.html">BOARDS</a>
-                    <a class="nav-item nav-link" href="swimwear.html">SWIMWEAR</a>
-                    <a class="nav-item nav-link" href="lessons.html">LESSONS</a>
-                    <a class="nav-item modal-popper nav-link" href="#">CONTACT</a>
-                </div>
-            </div>
-        </nav> 
-
+        
+    <div class="whiteStripe"></div>
     <div class= "container">
+        
         <div class="row">
-          <div class="col">
-              
-          </div>
+            <div class="col">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="navbar-brand active" id="Library" href="../index.html">
+                        <img src="../boardingschool.png" class="logo" rel="logo">
+                    </a>
+                    
+                    
+                    <a class="nav-item nav-link cartCount" style="margin-right:0px" href="cart.html" tabindex="-1">
+                        <i class="fa fa-shopping-cart"></i>
+                    </a>
+            
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa fa-bars"></i>
+                    </button>
+            
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-item nav-link" href="boards.html">BOARDS</a>
+                            <a class="nav-item nav-link" href="swimwear.html">SWIMWEAR</a>
+                            <a class="nav-item nav-link" href="lessons.html">LESSONS</a>
+                            <a class="nav-item modal-popper nav-link" href="#">CONTACT</a>
+                        </div>
+                    </div>
+                </nav> 
+            </div>
         </div>
+
+            <div class="row">
+                    <div class="col-lg-2 col-md-4 col-sm-6">
+                            <form class="boardFilters">
+                            <h1>Demographic</h1>
+                            <hr class="featurette-divider">
+                            <table style="width:100%; margin:auto;">
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" onclick="javascript:yesnoCheck();" id="beaterCheck" value="beater" checked>
+                                    </td>
+                                    <td>
+                                        <h2>Kids</h2>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" onclick="javascript:yesnoCheck();" id="fishCheck" value="fish" checked>
+                                    </td>
+                                    <td>
+                                        <h2>Women</h2>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" onclick="javascript:yesnoCheck();" id="longboardCheck" value="longboard" checked>
+                                    </td>
+                                    <td>
+                                        <h2>Men</h2>
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                    </div>
+
+                    <div class="col-lg-10 col-md-8 col-sm-12">
+                        <div id="beaters">
+                            <div class="newCard beater">
+                                <img src="https://rashguardsusa.com/wp-content/uploads/2017/03/KCA100BL-Front.jpg" alt="g" width="100%">
+                                <h1 class="boardName">Unisex Hawaiian Floral Sleeves</h1>
+                                <table style="width:100%">
+                                    <tr>
+                                        <td>
+                                            <h3>KIDS</h3>
+                                        </td>
+                                        <td>
+                                            <h3>$25</h3>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <button id="addToCart" class="cartAddition">
+                                    <i class="fa fa-plus"></i>
+                                </button>
+                            </div>
+
+                            <div class="newCard beater">
+                                <img src="https://cdn.shopify.com/s/files/1/1658/0235/products/imagejpg_b1642d0d-6206-46f0-8eb6-443ef8a50771_1024x1024.png?v=1554147474" alt="a" width="100%">
+                                <h1 class="boardName">Rashguard & Swim Shorts Set</h1>
+                                <table style="width:100%">
+                                    <tr>
+                                        <td>
+                                            <h3>KIDS</h3>
+                                        </td>
+                                        <td>
+                                            <h3>$50</h3>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <button id="addToCart" class="cartAddition">
+                                    <i class="fa fa-plus"></i>
+                                </button>
+                            </div>
+
+                            <div class="newCard beater">
+                                <img src="https://images-na.ssl-images-amazon.com/images/I/61oOrKIa6LL._SX466_.jpg" alt="a" width="100%">
+                                <h1 class="boardName">Black & Sky Blue Wetsuit</h1>
+                                <table style="width:100%">
+                                    <tr>
+                                        <td>
+                                            <h3>KIDS</h3>
+                                        </td>
+                                        <td>
+                                            <h3>$90</h3>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <button id="addToCart" class="cartAddition">
+                                    <i class="fa fa-plus"></i>
+                                </button>
+                            </div>
+
+                            <div class="newCard beater">
+                                <img src="https://cdn3.volusion.com/nz9vj.72r95/v/vspfiles/photos/SW-BSH0006-3.jpg?1550738147" alt="c" width="100%">
+                                <h1 class="boardName">Flamingo Trunks</h1>
+                                <table style="width:100%">
+                                    <tr>
+                                        <td>
+                                            <h3>KIDS</h3>
+                                        </td>
+                                        <td>
+                                            <h3>$15</h3>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <button id="addToCart" class="cartAddition">
+                                    <i class="fa fa-plus"></i>
+                                </button>
+                            </div>
+    
+                            <div class="newCard beater">
+                                <img src="https://images-na.ssl-images-amazon.com/images/I/61f6Atd9sXL._UL1001_.jpg" alt="a" width="100%">
+                                <h1 class="boardName">Sunflower Suit</h1>
+                                <table style="width:100%">
+                                    <tr>
+                                        <td>
+                                            <h3>KIDS</h3>
+                                        </td>
+                                        <td>
+                                            <h3>$18</h3>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <button id="addToCart" class="cartAddition">
+                                    <i class="fa fa-plus"></i>
+                                </button>
+                            </div>
+
+                            <div class="newCard beater">
+                                <img src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1524234857-billabong-boys-swim-trunks-1524234840.jpg" alt="e" width="100%">
+                                <h1 class="boardName">Orange & Blue Tie-Dye Trunks</h1>
+                                <table style="width:100%">
+                                    <tr>
+                                        <td>
+                                            <h3>KIDS</h3>
+                                        </td>
+                                        <td>
+                                            <h3>$18</h3>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <button id="addToCart" class="cartAddition">
+                                    <i class="fa fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- end of id beaters -->
+                        
+                        <div id="fishes">
+                            <div class="newCard fish">
+                                <img src="https://cdn.shopify.com/s/files/1/0093/6202/products/SEEA_2019_Gaviotas_SurfSuit_Tropicala_1358_700x.jpg?v=1544841481" alt="a" width="100%">
+                                <h1 class="boardName">Long-Sleeved One Piece</h1>
+                                <table style="width:100%">
+                                    <tr>
+                                        <td>
+                                            <h3>WOMEN</h3>
+                                        </td>
+                                        <td>
+                                            <h3>$40</h3>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <button id="addToCart" class="cartAddition">
+                                    <i class="fa fa-plus"></i>
+                                </button>
+                            </div>
+
+                            <div class="newCard fish">
+                                <img src="https://images.boardriders.com/global/roxy-products/all/default/medium-large2/erjw103026_32syncroczlfs,w_kvj0_frt1.jpg" alt="a" width="100%">
+                                <h1 class="boardName">Insulative Monochromatic Wetsuit</h1>
+                                <table style="width:100%">
+                                    <tr>
+                                        <td>
+                                            <h3>WOMEN</h3>
+                                        </td>
+                                        <td>
+                                            <h3>$120</h3>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <button id="addToCart" class="cartAddition">
+                                    <i class="fa fa-plus"></i>
+                                </button>
+                            </div>
+
+                            <div class="newCard fish">
+                                <img src="https://images.boardriders.com/global/roxy-products/all/default/hi-res/erjx203255_surfmemorycroptopscooter,w_wbt0_frt1.jpg" alt="a" width="100%">
+                                <h1 class="boardName">White Surf-Safe Bikini</h1>
+                                <table style="width:100%">
+                                    <tr>
+                                        <td>
+                                            <h3>WOMEN</h3>
+                                        </td>
+                                        <td>
+                                            <h3>$45</h3>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <button id="addToCart" class="cartAddition">
+                                    <i class="fa fa-plus"></i>
+                                </button>
+                            </div>
+    
+                            <div class="newCard fish">
+                                <img src="https://images-na.ssl-images-amazon.com/images/I/81PoQZR3KxL._UL1500_.jpg" alt="d" width="100%">
+                                <h1 class="boardName">Palm & Stripe One Piece</h1>
+                                <table style="width:100%">
+                                    <tr>
+                                        <td>
+                                            <h3>WOMEN</h3>
+                                        </td>
+                                        <td>
+                                            <h3>$50</h3>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <button id="addToCart" class="cartAddition">
+                                    <i class="fa fa-plus"></i>
+                                </button>
+                            </div>
+
+                            <div class="newCard fish">
+                                <img src="https://images.boardriders.com/global/roxy-products/all/default/medium-large2/erjwr03286_csfashionlycra,w_kym6_frt1.jpg" alt="d" width="100%">
+                                <h1 class="boardName">Gray Short-Sleeve Rashguard</h1>
+                                <table style="width:100%">
+                                    <tr>
+                                        <td>
+                                            <h3>WOMEN</h3>
+                                        </td>
+                                        <td>
+                                            <h3>$35</h3>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <button id="addToCart" class="cartAddition">
+                                    <i class="fa fa-plus"></i>
+                                </button>
+                            </div>
+
+                            <div class="newCard fish">
+                                <img src="https://i.ebayimg.com/images/g/XFIAAOSwSVdbqZi8/s-l300.jpg" alt="d" width="100%">
+                                <h1 class="boardName">Pharrell Williams Surf Shorts</h1>
+                                <table style="width:100%">
+                                    <tr>
+                                        <td>
+                                            <h3>WOMEN</h3>
+                                        </td>
+                                        <td>
+                                            <h3>$40</h3>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <button id="addToCart" class="cartAddition">
+                                    <i class="fa fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- end of id fishes -->
+
+                        <div id="longboards">
+                            <div class="newCard longboard">
+                                <img src="https://www.ripcurl.com/media/products/2018/02/07/CBOPU7_BLUE_1_web-list_display.jpg" alt="b" width="100%">
+                                <h1 class="boardName">Blue Striped Trunks</h1>
+                                <table style="width:100%">
+                                    <tr>
+                                        <td>
+                                            <h3>MEN</h3>
+                                        </td>
+                                        <td>
+                                            <h3>$25</h3>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <button id="addToCart" class="cartAddition">
+                                    <i class="fa fa-plus"></i>
+                                </button>
+                            </div>
+
+                            <div class="newCard longboard">
+                                <img src="https://photos.cdn-outlet.com/photos/alternate/259x292/8117748/8117748-9755-1A-259x292.jpg" alt="b" width="100%">
+                                <h1 class="boardName">Tank Westuit</h1>
+                                <table style="width:100%">
+                                    <tr>
+                                        <td>
+                                            <h3>MEN</h3>
+                                        </td>
+                                        <td>
+                                            <h3>$80</h3>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <button id="addToCart" class="cartAddition">
+                                    <i class="fa fa-plus"></i>
+                                </button>
+                            </div>
+
+                            <div class="newCard longboard">
+                                <img src="http://cdn.shopify.com/s/files/1/1767/1829/products/WaterProof-NeoSkin-1mm-Mens-Wetsuit-3.jpg?v=1521540139" alt="b" width="100%">
+                                <h1 class="boardName">Long-Sleeved Wetsuit</h1>
+                                <table style="width:100%">
+                                    <tr>
+                                        <td>
+                                            <h3>MEN</h3>
+                                        </td>
+                                        <td>
+                                            <h3>$100</h3>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <button id="addToCart" class="cartAddition">
+                                    <i class="fa fa-plus"></i>
+                                </button>
+                            </div>
+
+                            <div class="newCard longboard">
+                                <img src="https://images-na.ssl-images-amazon.com/images/I/517TDwJe7gL._UX522_.jpg" alt="a" width="100%">
+                                <h1 class="boardName">Loose-Fit Black Rashguard</h1>
+                                <table style="width:100%">
+                                    <tr>
+                                        <td>
+                                            <h3>MEN</h3>
+                                        </td>
+                                        <td>
+                                            <h3>$30</h3>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <button id="addToCart" class="cartAddition">
+                                    <i class="fa fa-plus"></i>
+                                </button>
+                            </div>
+
+                            <div class="newCard longboard">
+                                <img src="https://cdn.shopify.com/s/files/1/0077/0432/products/5-inch-inseam-swim-trunks-the-glades-5-5-1.jpg?v=1547494756" alt="f" width="100%">
+                                <h1 class="boardName">Pink Alligator Chubbies</h1>
+                                <table style="width:100%">
+                                    <tr>
+                                        <td>
+                                            <h3>MEN</h3>
+                                        </td>
+                                        <td>
+                                            <h3>$15</h3>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <button id="addToCart" class="cartAddition">
+                                    <i class="fa fa-plus"></i>
+                                </button>
+                            </div>
+
+                            <div class="newCard longboard">
+                                <img src="https://cdn.shopify.com/s/files/1/0234/5963/products/IMG_0459-Edit_600x600.jpg?v=1557789069" alt="f" width="100%">
+                                <h1 class="boardName">Fake Denim Surf Shorts</h1>
+                                <table style="width:100%">
+                                    <tr>
+                                        <td>
+                                            <h3>MEN</h3>
+                                        </td>
+                                        <td>
+                                            <h3>$30</h3>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <button id="addToCart" class="cartAddition">
+                                    <i class="fa fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- end of id longboards -->
+
+                    </div>
+
+                </div>
 
     </div>
 
+    <div class="modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <form class="needs-validation" novalidate>
+                          <div class="form-row">
+                            <h5>Reach out!</h5>
+                          </div>
+                          <div class="form-row">
+                            <div class="col-md-6 mb-3">
+                              <label for="validationCustom01">First Name</label>
+                              <input type="text" class="form-control" id="validationCustom01" placeholder="Bethany" required>
+                              <div class="valid-feedback">
+                                Looks good!
+                              </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                              <label for="validationCustom02">Last Name</label>
+                              <input type="text" class="form-control" id="validationCustom02" placeholder="Hamilton" required>
+                              <div class="valid-feedback">
+                                Looks good!
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-row">
+                            <div class="col-md-12 mb-3">
+                              <label>Questions & Comments</label><br>
+                              <textarea name="Text1"></textarea>
+                            </div>
+                          </div>
+                          <hr class="featurette-divider">
+                          <div class="form-group">
+                            <button type="button" data-dismiss="modal">CLOSE</button>
+                            <button type="submit">SUBMIT</button>
+                          </div>
+                        </form>
+                </div>
+            </div>
+        </div>
+        <!-- end of modal -->
+
     
-    
+        <script>
+            // Example starter JavaScript for disabling form submissions if there are invalid fields
+            (function() {
+            'use strict';
+            window.addEventListener('load', function() {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function(form) {
+                form.addEventListener('submit', function(event) {
+                    if (form.checkValidity() === false) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+                });
+            }, false);
+            })();
+        </script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script>
+        function yesnoCheck() {
+            if (document.getElementById('beaterCheck').checked) {
+                document.getElementById('beaters').style.display = 'block';
+            }
+            else document.getElementById('beaters').style.display = 'none';
+
+            if (document.getElementById('fishCheck').checked) {
+                document.getElementById('fishes').style.display = 'block';
+            }
+            else document.getElementById('fishes').style.display = 'none';
+
+            if (document.getElementById('longboardCheck').checked) {
+                document.getElementById('longboards').style.display = 'block';
+            }
+            else document.getElementById('longboards').style.display = 'none';
+        }
+    </script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

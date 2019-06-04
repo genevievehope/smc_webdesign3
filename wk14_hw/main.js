@@ -19,29 +19,7 @@ $(document).ready(function(){
     updateCount();
     
 
-    $(".sortBeaters").click(function(){
-        toggleBeaters();
-    });
-
-    function toggleBeaters(){
-        beater = document.getElementsByClassName("beater")
-        console.log(beater)
-        $("beater").hide();
-
-        // if (beater.style.display == ""){
-        //     beater.style.display == "none"
-        // }
-        // else if (beater.style.display == "block"){
-        //     beater.style.display ==
-        // }
-
-        // if beater.style == "block"{
-        //     beater.style == "none";
-        // }
-        // else{
-        //     beater.style == "block";
-        // }
-    }
+    
 
 
     $(".myFunction").click(function(){
@@ -60,7 +38,28 @@ $(document).ready(function(){
     $('.modal-popper').click(function(){
         $('.modal').modal( {backdrop: 'static'} );
     });
+
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+                if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+            }, false);
+            });
+        }, false);
+        })();
     
+
+
     
 
 

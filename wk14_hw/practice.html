@@ -46,7 +46,122 @@
 
 
   <body>
-        
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <input type="checkbox" onclick="javascript:yesnoCheck();" name="yesno" id="beaterCheck" value="beater" checked> Beater<br>
+                <input type="checkbox" onclick="javascript:yesnoCheck();" name="yesno" id="fishCheck" value="fish" checked> Fish<br>
+                <input type="checkbox" onclick="javascript:yesnoCheck();" name="yesno" id="longboardCheck" value="longboard" checked> Longboard<br>
+                
+                <div id="beaters" style="display:block">
+                    <div class="newCard beater">
+                        <img src="../board_imgs/g.jpg" alt="g" width="100%">
+                        <h1 class="boardName">Original 54 Pro X Tyler Stanaland</h1>
+                        <table style="width:100%">
+                            <tr>
+                                <td>
+                                    <h3>BEATER</h3>
+                                </td>
+                                <td>
+                                    <h3>$250</h3>
+                                </td>
+                            </tr>
+                        </table>
+                        <button id="addToCart" class="cartAddition">
+                            <i class="fa fa-plus"></i>
+                        </button>
+                    </div>
+
+                    <div class="newCard beater">
+                        <img src="../board_imgs/a.jpg" alt="a" width="100%">
+                        <h1 class="boardName">Dipped in Styx</h1>
+                        <table style="width:100%">
+                            <tr>
+                                <td>
+                                    <h3>BEATER</h3>
+                                </td>
+                                <td>
+                                    <h3>$350</h3>
+                                </td>
+                            </tr>
+                        </table>
+                        <button id="addToCart" class="cartAddition">
+                            <i class="fa fa-plus"></i>
+                        </button>
+                    </div>
+                </div> 
+
+                <div id="longboards" style="display:block">
+                    <div class="newCard longboard">
+                        <img src="../board_imgs/b.jpg" alt="b" width="100%">
+                        <h1 class="boardName">Cool Chaser</h1>
+                        <table style="width:100%">
+                            <tr>
+                                <td>
+                                    <h3>LONGBOARD</h3>
+                                </td>
+                                <td>
+                                    <h3>$200</h3>
+                                </td>
+                            </tr>
+                        </table>
+                        <button id="addToCart" class="cartAddition">
+                            <i class="fa fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div id="fishes" style="display:block">
+                    <div class="newCard fish">
+                        <img src="https://images.evo.com/imgp/700/149939/633083/softech-kyuss-fish-fcs-ii-5-8-surfboard-5-8.jpg" alt="a" width="100%">
+                        <h1 class="boardName">Softech Kyuss Fish FCS II 5'8 Surfboard</h1>
+                        <table style="width:100%">
+                            <tr>
+                                <td>
+                                    <h3>FISH</h3>
+                                </td>
+                                <td>
+                                    <h3>$275</h3>
+                                </td>
+                            </tr>
+                        </table>
+                        <button id="addToCart" class="cartAddition">
+                            <i class="fa fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+                    
+
+                    
+
+                    If yes, explain: <input type='text' id='yes' name='yes'><br>
+                    What can we do to accommodate you?  <input type='text' id='acc' name='acc'>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript">
+        function yesnoCheck() {
+            if (document.getElementById('beaterCheck').checked) {
+                document.getElementById('beaters').style.display = 'block';
+            }
+            else document.getElementById('beaters').style.display = 'none';
+
+            if (document.getElementById('fishCheck').checked) {
+                document.getElementById('fishes').style.display = 'block';
+            }
+            else document.getElementById('fishes').style.display = 'none';
+
+            if (document.getElementById('longboardCheck').checked) {
+                document.getElementById('longboards').style.display = 'block';
+            }
+            else document.getElementById('longboards').style.display = 'none';
+        }
+    </script>
+            
+            
   </body>
 
   <style>

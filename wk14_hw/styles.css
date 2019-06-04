@@ -19,10 +19,6 @@ lead{
     color: white;
 }
 
-.navbar:hover{
-    color: #acefef;
-}
-
 .navbar-expand-lg .navbar-collapse{
     justify-content: flex-end;
 }
@@ -30,6 +26,7 @@ lead{
 .navbar-light .navbar-nav .nav-link {
     color: #0070ae;
     font-size: 18px;
+    margin-left: 30px;
 }
 
 .navbar-light:hover .navbar-nav:hover .nav-link:hover {
@@ -115,7 +112,6 @@ body{
 }
 
 .row{
-    background-color: #acefef;
     font-family: 'PT Sans Narrow', sans-serif;
 }
 
@@ -148,12 +144,15 @@ button:focus {
 h1{
     font-size: 22px;
     text-align: center;
+    margin: auto;
     color: #0070ae;
 }
 
 h2{
     font-size: 18px;
     text-align: left;
+    margin-left: 30px;
+    margin-top: 10px;
 }
 
 h3{
@@ -166,6 +165,7 @@ h3{
 .cartCount{
     display: inline;
     color: #0070ae;
+    margin-left: -20px;
 }
 
 .modal{
@@ -188,8 +188,9 @@ h3{
     padding: 15px;
     width: 30%;
     align-content: space-between;
-    margin-right: 3.333%;
+    margin-right: 3%;
     margin-bottom: 20px;
+    display: inline-block;
 }
 
 .col-lg-9{
@@ -296,7 +297,6 @@ body {
 }
   
 .mapouter{
-    background-color: white;
     width: 100%;
 }
 
@@ -317,7 +317,6 @@ body {
 }
   
 .topnav a:hover {
-    background-color: white;
     color: #acefef;
 }
   
@@ -328,7 +327,6 @@ body {
 
 .logo{
     float: left;
-    background-color: white;
     transition: all 1s ease;
 }
 
@@ -355,9 +353,21 @@ button{
     padding: 5px 10px 5px;
 }
 
-@media screen and (max-width: 792px) {
+col-lg-10 {
+    justify-content: space-between;
+}
+
+col-md-8 {
+    justify-content: space-between;
+}
+
+col-sm-12 {
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 992px) {
     .newCard{
-        width: 46.67%;
+        width: 46%;
     }
 
     .cartCount{
@@ -366,7 +376,7 @@ button{
 }
 
 /* 600px and under */
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 768px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
       float: right;
@@ -379,12 +389,49 @@ button{
       top: 0;
     }
 
+    .newCard{
+        width: 100%;
+    }
+
     table{
         float: center;
     }
 
     .cartCount{
         display: inline;
+    }
+
+    h1{
+        width: 50%;
+    }
+}
+
+.whiteStripe{
+    width: 100%;
+    height: 100px;
+    z-index: -1;
+    background-color: white;
+    position: absolute;
+}
+
+@media screen and (max-width: 650px) {
+    .newCard{
+        width: 46%;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        color: #0070ae;
+        font-size: 18px;
+        margin-left: 0px;
+        text-align: center;
+    }
+
+    .nav-link:first-child{
+        margin-top: 20px;
+    }
+
+    .navbar-light:hover .navbar-nav:hover .nav-link:hover {
+        color: white ! important;
     }
 }
 

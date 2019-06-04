@@ -141,12 +141,12 @@ function myFunction() {
 <button onclick="sortListDir()">Sort</button>
 
 <ul id="id01">
-  <li price=1>Oslo</li>
-  <li price=4>Stockholm</li>
-  <li price=5>Helsinki</li>
-  <li price=3>Berlin</li>
-  <li price=6 >Rome</li>
-  <li price=2>Madrid</li>
+  <li id=1>Oslo</li>
+  <li id=4>Stockholm</li>
+  <li id=5>Helsinki</li>
+  <li id=3>Berlin</li>
+  <li id=6 >Rome</li>
+  <li id=2>Madrid</li>
 </ul>
 
 
@@ -157,6 +157,7 @@ function myFunction() {
 function sortListDir() {
   var list, i, switching, b, shouldSwitch, dir, switchcount = 0;
   list = document.getElementById("id01");
+  console.log("genny here " + list[0])
   switching = true;
   // Set the sorting direction to ascending:
   dir = "asc"; 
@@ -164,7 +165,7 @@ function sortListDir() {
   while (switching) {
     // start by saying: no switching is done:
     switching = false;
-    b = list.getElementsByTagName("LI");
+    b = list.getElementsByCId("LI");
     // Loop through all list-items:
     for (i = 0; i < (b.length - 1); i++) {
       //start by saying there should be no switching:

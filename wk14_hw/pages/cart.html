@@ -16,31 +16,37 @@
     <title>Boarding School</title>
   </head>
   <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-white">
-            <a class="navbar-brand active" id="Library" href="../index.html">
-                <img src="../boardingschool.png" class="logo" rel="logo">
-            </a>
-            
-            
-            <a class="nav-item nav-link cartCount" style="margin-right:0px" href="cart.html" tabindex="-1">
-                <i class="fa fa-shopping-cart"></i>
-            </a>
-    
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fa fa-bars"></i>
-            </button>
-    
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-item nav-link" href="boards.html">BOARDS</a>
-                    <a class="nav-item nav-link" href="swimwear.html">SWIMWEAR</a>
-                    <a class="nav-item nav-link" href="lessons.html">LESSONS</a>
-                    <a class="nav-item modal-popper nav-link" href="#">CONTACT</a>
-                </div>
-            </div>
-            </nav> 
-
+        
+    <div class="whiteStripe"></div>
     <div class= "container">
+        
+        <div class="row">
+            <div class="col">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="navbar-brand active" id="Library" href="../index.html">
+                        <img src="../boardingschool.png" class="logo" rel="logo">
+                    </a>
+                    
+                    
+                    <a class="nav-item nav-link cartCount" style="margin-right:0px" href="cart.html" tabindex="-1">
+                        <i class="fa fa-shopping-cart"></i>
+                    </a>
+            
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa fa-bars"></i>
+                    </button>
+            
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-item nav-link" href="boards.html">BOARDS</a>
+                            <a class="nav-item nav-link" href="swimwear.html">SWIMWEAR</a>
+                            <a class="nav-item nav-link" href="lessons.html">LESSONS</a>
+                            <a class="nav-item modal-popper nav-link" href="#">CONTACT</a>
+                        </div>
+                    </div>
+                </nav> 
+            </div>
+        </div>
         <div class="row">
           <div class="col">
                 <h5>Checkout</h5>
@@ -95,7 +101,7 @@
                         </div>
                         <div class="col-md-2 mb-3">
                             <label for="validationCustom02">Exp Date</label>
-                            <input type="text" class="form-control" id="validationCustom02" placeholder="mm/yy" required>
+                            <input type="text" class="form-control" placeholder="mm/yy" required>
                             <div class="valid-feedback">
                                 Looks good!
                             </div>
@@ -105,7 +111,7 @@
                         </div>
                         <div class="col-md-2 mb-3">
                             <label for="validationCustom02">CCV</label>
-                            <input type="number" class="form-control" id="validationCustom02" placeholder="310" required>
+                            <input type="number" class="form-control" placeholder="310" required>
                             <div class="valid-feedback">
                                 Looks good!
                             </div>
@@ -118,28 +124,28 @@
                     <div class="form-row">
                         <div class="col-md-4 mb-3">
                             <label for="validationCustom03">Street Address</label>
-                            <input type="text" class="form-control" id="validationCustom03" placeholder="1744 Pearl St." required>
+                            <input type="text" class="form-control" placeholder="1744 Pearl St." required>
                             <div class="invalid-feedback">
                                 Please provide your street address.
                             </div>
                         </div>
                         <div class="col-md-4 mb-3">
                             <label for="validationCustom03">City</label>
-                            <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
+                            <input type="text" class="form-control" placeholder="City" required>
                             <div class="invalid-feedback">
                             Please provide a valid city.
                             </div>
                         </div>
                         <div class="col-md-2 mb-3">
                             <label for="validationCustom04">State</label>
-                            <input type="text" class="form-control" id="validationCustom04" placeholder="State" required>
+                            <input type="text" class="form-control" placeholder="State" required>
                             <div class="invalid-feedback">
                             Please provide a valid state.
                             </div>
                         </div>
                         <div class="col-md-2 mb-3">
                             <label for="validationCustom05">Zip</label>
-                            <input type="text" class="form-control" id="validationCustom05" placeholder="Zip" required>
+                            <input type="text" class="form-control" placeholder="Zip" required>
                             <div class="invalid-feedback">
                             Please provide a valid zip.
                             </div>
@@ -148,35 +154,79 @@
 
 
                     <div class="form-group">
-                        <button class="cartSumbit" type="submit">SUBMIT FORM</button>
+                        <button type="submit">PAY</button>
                     </div>
-                  </form>
+                </form>
                   
-                  <script>
-                  // Example starter JavaScript for disabling form submissions if there are invalid fields
-                  (function() {
+                <script>
+                    // Example starter JavaScript for disabling form submissions if there are invalid fields
+                    (function() {
                     'use strict';
                     window.addEventListener('load', function() {
-                      // Fetch all the forms we want to apply custom Bootstrap validation styles to
-                      var forms = document.getElementsByClassName('needs-validation');
-                      // Loop over them and prevent submission
-                      var validation = Array.prototype.filter.call(forms, function(form) {
+                        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                        var forms = document.getElementsByClassName('needs-validation');
+                        // Loop over them and prevent submission
+                        var validation = Array.prototype.filter.call(forms, function(form) {
                         form.addEventListener('submit', function(event) {
-                          if (form.checkValidity() === false) {
+                            if (form.checkValidity() === false) {
                             event.preventDefault();
                             event.stopPropagation();
-                          }
-                          form.classList.add('was-validated');
+                            }
+                            form.classList.add('was-validated');
                         }, false);
-                      });
+                        });
                     }, false);
-                  })();
-                  </script>
+                    })();
+                </script>
 
           </div>
         </div>
 
     </div>
+
+    <div class="modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <form class="needs-validation" novalidate>
+                          <div class="form-row">
+                            <h5>Reach out!</h5>
+                          </div>
+                          <div class="form-row">
+                            <div class="col-md-6 mb-3">
+                              <label for="validationCustom01">First Name</label>
+                              <input type="text" class="form-control" id="validationCustom01" placeholder="Bethany" required>
+                              <div class="valid-feedback">
+                                Looks good!
+                              </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                              <label for="validationCustom02">Last Name</label>
+                              <input type="text" class="form-control" id="validationCustom02" placeholder="Hamilton" required>
+                              <div class="valid-feedback">
+                                Looks good!
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-row">
+                            <div class="col-md-12 mb-3">
+                              <label>Questions & Comments</label><br>
+                              <textarea name="Text1"></textarea>
+                            </div>
+                          </div>
+                          <hr class="featurette-divider">
+                          <div class="form-group">
+                            <button type="button" data-dismiss="modal">CLOSE</button>
+                            <button type="submit">SUBMIT</button>
+                           </div>
+
+                        </div>
+                          </div>
+                        </form>
+                </div>
+            </div>
+        </div>
+        <!-- end of modal -->
     
 
     <!-- Optional JavaScript -->
